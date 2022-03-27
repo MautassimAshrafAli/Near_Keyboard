@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace keyboard_
 {
     public partial class keyboard_form : Form
     {
-        
-
         protected override CreateParams CreateParams
         {
 
@@ -28,21 +27,14 @@ namespace keyboard_
 
         }
 
-      
-
         public keyboard_form()
         {
             InitializeComponent();
 
-            label95.Text = "";
-            label96.Text = "";
-            label97.Text = "";
-            label98.Text = "";
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+            arrow_left.Text = char.ConvertFromUtf32(0xE016);
+            arrow_r.Text = char.ConvertFromUtf32(0xE017);
+            arrow_up.Text = char.ConvertFromUtf32(0xE018);
+            arrow_down.Text = char.ConvertFromUtf32(0xE011);
 
             this.CenterToScreen();
 
@@ -51,7 +43,6 @@ namespace keyboard_
             this.KeyPreview = true;
 
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
-
         }
 
         private void timer4_Tick(object sender, EventArgs e)
@@ -107,25 +98,18 @@ namespace keyboard_
             timer4.Start();
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void close_win_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        private void min_win_Click(object sender, EventArgs e)
         {
             if(WindowState == FormWindowState.Normal)
-            {
-                
-
-                this.WindowState = FormWindowState.Minimized;
-
-            }
+            {this.WindowState = FormWindowState.Minimized;}
         }
 
-        #region mouse_live_enter
-
-       
+        #region mouse_leave_enter
 
         private void gunaElipsePanel1_MouseEnter(object sender, EventArgs e)
         {
@@ -272,117 +256,117 @@ namespace keyboard_
 
         private void gunaElipsePanel16_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel16.BaseColor = Color.FromArgb(41, 41, 41);
+            _f1_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel16_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel16.BaseColor = Color.FromArgb(75, 75, 75);
+            _f1_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel17_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel17.BaseColor = Color.FromArgb(41, 41, 41);
+            _f2_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel17_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel17.BaseColor = Color.FromArgb(75, 75, 75);
+            _f2_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel18_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel18.BaseColor = Color.FromArgb(41, 41, 41);
+            _f3_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel18_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel18.BaseColor = Color.FromArgb(75, 75, 75);
+            _f3_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel19_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel19.BaseColor = Color.FromArgb(41, 41, 41);
+            _f4_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel19_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel19.BaseColor = Color.FromArgb(75, 75, 75);
+            _f4_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel20_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel20.BaseColor = Color.FromArgb(41, 41, 41);
+            _f5_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
         private void gunaElipsePanel20_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel20.BaseColor = Color.FromArgb(75, 75, 75);
+            _f5_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
         private void gunaElipsePanel21_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel21.BaseColor = Color.FromArgb(41, 41, 41);
+            _f6_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
         private void gunaElipsePanel21_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel21.BaseColor = Color.FromArgb(75, 75, 75);
+            _f6_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
         private void gunaElipsePanel22_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel22.BaseColor = Color.FromArgb(41, 41, 41);
+            _f7_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel22_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel22.BaseColor = Color.FromArgb(75, 75, 75);
+            _f7_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel23_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel23.BaseColor = Color.FromArgb(41, 41, 41);
+            _f8_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel23_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel23.BaseColor = Color.FromArgb(75, 75, 75);
+            _f8_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel24_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel24.BaseColor = Color.FromArgb(41, 41, 41);
+            _f9_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel24_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel24.BaseColor = Color.FromArgb(75, 75, 75);
+            _f9_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel25_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel25.BaseColor = Color.FromArgb(41, 41, 41);
+            _f10_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel25_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel25.BaseColor = Color.FromArgb(75, 75, 75);
+            _f10_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel26_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel26.BaseColor = Color.FromArgb(41, 41, 41);
+            _f11_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
 
         private void gunaElipsePanel26_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel26.BaseColor = Color.FromArgb(75, 75, 75);
+            _f11_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
 
         private void gunaElipsePanel27_MouseEnter(object sender, EventArgs e)
         {
-            gunaElipsePanel27.BaseColor = Color.FromArgb(41, 41, 41);
+            _f12_p.BaseColor = Color.FromArgb(41, 41, 41);
         }
         private void gunaElipsePanel27_MouseLeave(object sender, EventArgs e)
         {
-            gunaElipsePanel27.BaseColor = Color.FromArgb(75, 75, 75);
+            _f12_p.BaseColor = Color.FromArgb(75, 75, 75);
         }
         private void gunaElipsePanel28_MouseEnter(object sender, EventArgs e)
         {
@@ -856,83 +840,87 @@ namespace keyboard_
         private void label59_Click(object sender, EventArgs e)
         {
 
-            caps_up.Start();
+            caps_up_Tick_task();
 
             caps += 1;
 
-
-
         }
-        
 
-        private void caps_up_Tick(object sender, EventArgs e)
+        private void caps_up_Tick_task()
         {
+            Task.Factory.StartNew(() =>
+            {
+                while (true)
+                {
+                    if (caps == 1)
+                    {
 
-            if (caps == 1) {
-
-                q_.Text = "Q";
-                w_.Text = "W";
-                e_.Text = "E";
-                r_.Text = "R";
-                t_.Text = "T";
-                y_.Text = "Y";
-                u_.Text = "U";
-                i_.Text = "I";
-                o_.Text = "O";
-                p_.Text = "P";
-                a_.Text = "A";
-                s_.Text = "S";
-                d_.Text = "D";
-                f_.Text = "F";
-                g_.Text = "G";
-                h_.Text = "H";
-                j_.Text = "J";
-                k_.Text = "K";
-                l_.Text = "L";
-                z_.Text = "Z";
-                x_.Text = "X";
-                c_.Text = "C";
-                v_.Text = "V";
-                b_.Text = "B";
-                n_.Text = "N";
-                m_.Text = "M";
-
-
-            }
-            if (caps == 2) {
-
-                q_.Text = "q";
-                w_.Text = "w";
-                e_.Text = "e";
-                r_.Text = "r";
-                t_.Text = "t";
-                y_.Text = "y";
-                u_.Text = "u";
-                i_.Text = "i";
-                o_.Text = "o";
-                p_.Text = "p";
-                a_.Text = "a";
-                s_.Text = "s";
-                d_.Text = "d";
-                f_.Text = "f";
-                g_.Text = "g";
-                h_.Text = "h";
-                j_.Text = "j";
-                k_.Text = "k";
-                l_.Text = "l";
-                z_.Text = "z";
-                x_.Text = "x";
-                c_.Text = "c";
-                v_.Text = "v";
-                b_.Text = "b";
-                n_.Text = "n";
-                m_.Text = "m";
+                        q_.Text = "Q";
+                        w_.Text = "W";
+                        e_.Text = "E";
+                        r_.Text = "R";
+                        t_.Text = "T";
+                        y_.Text = "Y";
+                        u_.Text = "U";
+                        i_.Text = "I";
+                        o_.Text = "O";
+                        p_.Text = "P";
+                        a_.Text = "A";
+                        s_.Text = "S";
+                        d_.Text = "D";
+                        f_.Text = "F";
+                        g_.Text = "G";
+                        h_.Text = "H";
+                        j_.Text = "J";
+                        k_.Text = "K";
+                        l_.Text = "L";
+                        z_.Text = "Z";
+                        x_.Text = "X";
+                        c_.Text = "C";
+                        v_.Text = "V";
+                        b_.Text = "B";
+                        n_.Text = "N";
+                        m_.Text = "M";
 
 
-                caps = 0;
+                    }
+                    else if (caps == 2)
+                    {
 
-            }
-            
+                        q_.Text = "q";
+                        w_.Text = "w";
+                        e_.Text = "e";
+                        r_.Text = "r";
+                        t_.Text = "t";
+                        y_.Text = "y";
+                        u_.Text = "u";
+                        i_.Text = "i";
+                        o_.Text = "o";
+                        p_.Text = "p";
+                        a_.Text = "a";
+                        s_.Text = "s";
+                        d_.Text = "d";
+                        f_.Text = "f";
+                        g_.Text = "g";
+                        h_.Text = "h";
+                        j_.Text = "j";
+                        k_.Text = "k";
+                        l_.Text = "l";
+                        z_.Text = "z";
+                        x_.Text = "x";
+                        c_.Text = "c";
+                        v_.Text = "v";
+                        b_.Text = "b";
+                        n_.Text = "n";
+                        m_.Text = "m";
+
+
+                        caps = 0;
+
+                    }
+                }
+            });
+
         }
 
         private void label44_Click(object sender, EventArgs e)
@@ -1363,116 +1351,123 @@ namespace keyboard_
 
         #region 1_@
 
-       
-
         int sh = 0;
         private void label73_Click(object sender, EventArgs e)
         {
-            shift_.Start();
+            shift__Tick_task();
 
             sh += 1;
 
         }
-        private void shift__Tick(object sender, EventArgs e)
+        private void shift__Tick_task()
         {
+            Task.Factory.StartNew(() =>
+            {
+                while (true)
+                {
+                    Thread.Sleep(100);
 
-            if (sh == 1) {
+                    if (sh == 1)
+                    {
 
-                _info_.ForeColor = Color.White;
-                _at_.ForeColor = Color.White;
-                _hash_.ForeColor = Color.White;
-                _do_.ForeColor = Color.White;
-                _mo_.ForeColor = Color.White;
-                _up_.ForeColor = Color.White;
-                _and_.ForeColor = Color.White;
-                _as_.ForeColor = Color.White;
-                _ob_.ForeColor = Color.White;
-                _cb_.ForeColor = Color.White;
-                _min_.ForeColor = Color.White;
-                _add_.ForeColor = Color.White;
-                _wav_.ForeColor = Color.White;
-                _op_.ForeColor = Color.White;
-                _cp_.ForeColor = Color.White;
-                _or_.ForeColor = Color.White;
-                _scop_.ForeColor = Color.White;
-                _str_.ForeColor = Color.White;
-                _smal_.ForeColor = Color.White;
-                _large_.ForeColor = Color.White;
-                _qs_.ForeColor = Color.White;
+                        _info_.ForeColor = Color.White;
+                        _at_.ForeColor = Color.White;
+                        _hash_.ForeColor = Color.White;
+                        _do_.ForeColor = Color.White;
+                        _mo_.ForeColor = Color.White;
+                        _up_.ForeColor = Color.White;
+                        _and_.ForeColor = Color.White;
+                        _as_.ForeColor = Color.White;
+                        _ob_.ForeColor = Color.White;
+                        _cb_.ForeColor = Color.White;
+                        _min_.ForeColor = Color.White;
+                        _add_.ForeColor = Color.White;
+                        _wav_.ForeColor = Color.White;
+                        _op_.ForeColor = Color.White;
+                        _cp_.ForeColor = Color.White;
+                        _or_.ForeColor = Color.White;
+                        _scop_.ForeColor = Color.White;
+                        _str_.ForeColor = Color.White;
+                        _smal_.ForeColor = Color.White;
+                        _large_.ForeColor = Color.White;
+                        _qs_.ForeColor = Color.White;
 
-                _1_.ForeColor = Color.Silver;
-                _2_.ForeColor = Color.Silver;
-                _3_.ForeColor = Color.Silver;
-                _4_.ForeColor = Color.Silver;
-                _5_.ForeColor = Color.Silver;
-                _6_.ForeColor = Color.Silver;
-                _7_.ForeColor = Color.Silver;
-                _8_.ForeColor = Color.Silver;
-                _9_.ForeColor = Color.Silver;
-                __0__.ForeColor = Color.Silver;
+                        _1_.ForeColor = Color.Silver;
+                        _2_.ForeColor = Color.Silver;
+                        _3_.ForeColor = Color.Silver;
+                        _4_.ForeColor = Color.Silver;
+                        _5_.ForeColor = Color.Silver;
+                        _6_.ForeColor = Color.Silver;
+                        _7_.ForeColor = Color.Silver;
+                        _8_.ForeColor = Color.Silver;
+                        _9_.ForeColor = Color.Silver;
+                        __0__.ForeColor = Color.Silver;
 
-                _p1_.ForeColor = Color.Silver;
-                _p2_.ForeColor = Color.Silver;
-                _bs_.ForeColor = Color.Silver;
-                _sime_.ForeColor = Color.Silver;
-                _oc_.ForeColor = Color.Silver;
-                _pa_.ForeColor = Color.Silver;
-                _po_.ForeColor = Color.Silver;
-                _s_.ForeColor = Color.Silver;
-                _co_.ForeColor = Color.Silver;
-
-
-
-            }
-            if (sh == 2) {
-
-                _info_.ForeColor = Color.Silver;
-                _at_.ForeColor = Color.Silver;
-                _hash_.ForeColor = Color.Silver;
-                _do_.ForeColor = Color.Silver;
-                _mo_.ForeColor = Color.Silver;
-                _up_.ForeColor = Color.Silver;
-                _and_.ForeColor = Color.Silver;
-                _as_.ForeColor = Color.Silver;
-                _ob_.ForeColor = Color.Silver;
-                _cb_.ForeColor = Color.Silver;
-                _min_.ForeColor = Color.Silver;
-                _add_.ForeColor = Color.Silver;
-                _wav_.ForeColor = Color.Silver;
-                _op_.ForeColor = Color.Silver;
-                _cp_.ForeColor = Color.Silver;
-                _or_.ForeColor = Color.Silver;
-                _scop_.ForeColor = Color.Silver;
-                _str_.ForeColor = Color.Silver;
-                _smal_.ForeColor = Color.Silver;
-                _large_.ForeColor = Color.Silver;
-                _qs_.ForeColor = Color.Silver;             
-
-                _1_.ForeColor = Color.White;
-                _2_.ForeColor = Color.White;
-                _3_.ForeColor = Color.White;
-                _4_.ForeColor = Color.White;
-                _5_.ForeColor = Color.White;
-                _6_.ForeColor = Color.White;
-                _7_.ForeColor = Color.White;
-                _8_.ForeColor = Color.White;
-                _9_.ForeColor = Color.White;
-                __0__.ForeColor = Color.White;
-
-                _p1_.ForeColor = Color.White;
-                _p2_.ForeColor = Color.White;
-                _bs_.ForeColor = Color.White;
-                _sime_.ForeColor = Color.White;
-                _oc_.ForeColor = Color.White;
-                _pa_.ForeColor = Color.White;
-                _po_.ForeColor = Color.White;
-                _s_.ForeColor = Color.White;
-                _co_.ForeColor = Color.White;
+                        _p1_.ForeColor = Color.Silver;
+                        _p2_.ForeColor = Color.Silver;
+                        _bs_.ForeColor = Color.Silver;
+                        _sime_.ForeColor = Color.Silver;
+                        _oc_.ForeColor = Color.Silver;
+                        _pa_.ForeColor = Color.Silver;
+                        _po_.ForeColor = Color.Silver;
+                        _s_.ForeColor = Color.Silver;
+                        _co_.ForeColor = Color.Silver;
 
 
-                sh = 0;
 
-            }
+                    }
+                    else if (sh == 2)
+                    {
+
+                        _info_.ForeColor = Color.Silver;
+                        _at_.ForeColor = Color.Silver;
+                        _hash_.ForeColor = Color.Silver;
+                        _do_.ForeColor = Color.Silver;
+                        _mo_.ForeColor = Color.Silver;
+                        _up_.ForeColor = Color.Silver;
+                        _and_.ForeColor = Color.Silver;
+                        _as_.ForeColor = Color.Silver;
+                        _ob_.ForeColor = Color.Silver;
+                        _cb_.ForeColor = Color.Silver;
+                        _min_.ForeColor = Color.Silver;
+                        _add_.ForeColor = Color.Silver;
+                        _wav_.ForeColor = Color.Silver;
+                        _op_.ForeColor = Color.Silver;
+                        _cp_.ForeColor = Color.Silver;
+                        _or_.ForeColor = Color.Silver;
+                        _scop_.ForeColor = Color.Silver;
+                        _str_.ForeColor = Color.Silver;
+                        _smal_.ForeColor = Color.Silver;
+                        _large_.ForeColor = Color.Silver;
+                        _qs_.ForeColor = Color.Silver;
+
+                        _1_.ForeColor = Color.White;
+                        _2_.ForeColor = Color.White;
+                        _3_.ForeColor = Color.White;
+                        _4_.ForeColor = Color.White;
+                        _5_.ForeColor = Color.White;
+                        _6_.ForeColor = Color.White;
+                        _7_.ForeColor = Color.White;
+                        _8_.ForeColor = Color.White;
+                        _9_.ForeColor = Color.White;
+                        __0__.ForeColor = Color.White;
+
+                        _p1_.ForeColor = Color.White;
+                        _p2_.ForeColor = Color.White;
+                        _bs_.ForeColor = Color.White;
+                        _sime_.ForeColor = Color.White;
+                        _oc_.ForeColor = Color.White;
+                        _pa_.ForeColor = Color.White;
+                        _po_.ForeColor = Color.White;
+                        _s_.ForeColor = Color.White;
+                        _co_.ForeColor = Color.White;
+
+
+                        sh = 0;
+
+                    }
+                }
+            });
 
         }
         private void _1__Click(object sender, EventArgs e)
@@ -1823,8 +1818,6 @@ namespace keyboard_
             }
         }
 
-
-
         #endregion
 
         #region key_v
@@ -1878,59 +1871,67 @@ namespace keyboard_
 
         #region fn
 
-        
-
-
         int fn__ = 0;
         private void gunaElipsePanel68_Click(object sender, EventArgs e)
         {
 
-            fn_.Start();
+            fn__Tick_task();
             fn__ += 1;
 
         }
 
-        private void fn__Tick(object sender, EventArgs e)
+        private void fn__Tick_task()
         {
+            Task.Factory.StartNew(() =>
+            {
 
-            if (fn__ == 1) {
+                while (true)
+                {
+                    Thread.Sleep(100);
 
-                _f1_.ForeColor = Color.White;
-                _f2_.ForeColor = Color.White;
-                _f3_.ForeColor = Color.White;
-                _f4_.ForeColor = Color.White;
-                _f5_.ForeColor = Color.White;
-                _f6_.ForeColor = Color.White;
-                _f7_.ForeColor = Color.White;
-                _f8_.ForeColor = Color.White;
-                _f9_.ForeColor = Color.White;
-                _f10_.ForeColor = Color.White;
-                _f11_.ForeColor = Color.White;
-                _f12_.ForeColor = Color.White;
+                    if (fn__ == 1)
+                    {
 
-            }
-            if (fn__ == 2) {
+                        _f1_.ForeColor = Color.White;
+                        _f2_.ForeColor = Color.White;
+                        _f3_.ForeColor = Color.White;
+                        _f4_.ForeColor = Color.White;
+                        _f5_.ForeColor = Color.White;
+                        _f6_.ForeColor = Color.White;
+                        _f7_.ForeColor = Color.White;
+                        _f8_.ForeColor = Color.White;
+                        _f9_.ForeColor = Color.White;
+                        _f10_.ForeColor = Color.White;
+                        _f11_.ForeColor = Color.White;
+                        _f12_.ForeColor = Color.White;
 
-                _f1_.ForeColor = Color.Silver;
-                _f2_.ForeColor = Color.Silver;
-                _f3_.ForeColor = Color.Silver;
-                _f4_.ForeColor = Color.Silver;
-                _f5_.ForeColor = Color.Silver;
-                _f6_.ForeColor = Color.Silver;
-                _f7_.ForeColor = Color.Silver;
-                _f8_.ForeColor = Color.Silver;
-                _f9_.ForeColor = Color.Silver;
-                _f10_.ForeColor = Color.Silver;
-                _f11_.ForeColor = Color.Silver;
-                _f12_.ForeColor = Color.Silver;
+                    }
+                    else if (fn__ == 2)
+                    {
 
-                fn__ = 0;
-            }
+                        _f1_.ForeColor = Color.Silver;
+                        _f2_.ForeColor = Color.Silver;
+                        _f3_.ForeColor = Color.Silver;
+                        _f4_.ForeColor = Color.Silver;
+                        _f5_.ForeColor = Color.Silver;
+                        _f6_.ForeColor = Color.Silver;
+                        _f7_.ForeColor = Color.Silver;
+                        _f8_.ForeColor = Color.Silver;
+                        _f9_.ForeColor = Color.Silver;
+                        _f10_.ForeColor = Color.Silver;
+                        _f11_.ForeColor = Color.Silver;
+                        _f12_.ForeColor = Color.Silver;
 
+                        fn__ = 0;
+                    }
+
+                }
+
+            });
 
         }
 
-        private void gunaElipsePanel16_Click(object sender, EventArgs e)
+        private void _f1_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -1951,7 +1952,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel18_Click(object sender, EventArgs e)
+        private void _f3_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -1961,7 +1962,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel19_Click(object sender, EventArgs e)
+        private void _f4_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -1971,7 +1972,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel20_Click(object sender, EventArgs e)
+        private void _f5_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -1981,7 +1982,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel21_Click(object sender, EventArgs e)
+        private void _f6_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -1991,7 +1992,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel22_Click(object sender, EventArgs e)
+        private void _f7_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -2001,7 +2002,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel23_Click(object sender, EventArgs e)
+        private void _f8_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -2011,7 +2012,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel24_Click(object sender, EventArgs e)
+        private void _f9_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -2031,7 +2032,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel26_Click(object sender, EventArgs e)
+        private void _f11_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -2041,7 +2042,7 @@ namespace keyboard_
             }
         }
 
-        private void gunaElipsePanel27_Click(object sender, EventArgs e)
+        private void _f12_p_Click(object sender, EventArgs e)
         {
             if (fn__ == 1)
             {
@@ -2067,7 +2068,7 @@ namespace keyboard_
 
         #endregion
 
-        private void label91_Click(object sender, EventArgs e)
+        private void start_Click(object sender, EventArgs e)
         {
 
             System.Diagnostics.Process p = new System.Diagnostics.Process();
@@ -2084,7 +2085,7 @@ namespace keyboard_
 
         }
 
-        private void gunaElipsePanel71_Click(object sender, EventArgs e)
+        private void space_Click(object sender, EventArgs e)
         {
             SendKeys.Send(" ");
         }
@@ -2099,21 +2100,6 @@ namespace keyboard_
 
             }
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd.exe";
-            p.StartInfo.RedirectStandardInput = true;
-            p.StartInfo.RedirectStandardOutput = true;
-            p.StartInfo.CreateNoWindow = true;
-            p.StartInfo.UseShellExecute = false;
-            p.Start();
-
-            p.StandardInput.WriteLine("cd/ & start osk.exe");
-            p.StandardInput.Flush();
-            p.StandardInput.Close();
         }
     }
 }

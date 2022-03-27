@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(keyboard_form));
             this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.min_win = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.close_win = new Bunifu.Framework.UI.BunifuImageButton();
+            this.title = new System.Windows.Forms.Label();
             this.gunaElipsePanel9 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.del_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this._add_ = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_eq = new System.Windows.Forms.Label();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this._min_ = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.min_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
             this._cb_ = new System.Windows.Forms.Label();
             this.@__0__ = new System.Windows.Forms.Label();
@@ -77,33 +77,33 @@
             this._wav_ = new System.Windows.Forms.Label();
             this._co_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel15 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.gunaElipsePanel16 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.esc_btn = new System.Windows.Forms.Label();
+            this._f1_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f1_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel17 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f2_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f2_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel18 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f3_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f3_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel19 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f4_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f4_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel20 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f5_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f5_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel21 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f6_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f6_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel22 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f7_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f7_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel23 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f8_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f8_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel24 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f9_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f9_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel25 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f10_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f10_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel26 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f11_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f11_ = new System.Windows.Forms.Label();
-            this.gunaElipsePanel27 = new Guna.UI.WinForms.GunaElipsePanel();
+            this._f12_p = new Guna.UI.WinForms.GunaElipsePanel();
             this._f12_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel28 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label42 = new System.Windows.Forms.Label();
+            this.tab_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel29 = new Guna.UI.WinForms.GunaElipsePanel();
             this.q_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel30 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -134,7 +134,7 @@
             this._or_ = new System.Windows.Forms.Label();
             this._bs_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel42 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label59 = new System.Windows.Forms.Label();
+            this.capslk_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel43 = new Guna.UI.WinForms.GunaElipsePanel();
             this.a_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel44 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -160,9 +160,9 @@
             this._str_ = new System.Windows.Forms.Label();
             this._oc_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel54 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label74 = new System.Windows.Forms.Label();
+            this.enter_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel55 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label73 = new System.Windows.Forms.Label();
+            this.shift_l_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel56 = new Guna.UI.WinForms.GunaElipsePanel();
             this.z_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel57 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -187,43 +187,39 @@
             this._qs_ = new System.Windows.Forms.Label();
             this._s_ = new System.Windows.Forms.Label();
             this.gunaElipsePanel66 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label88 = new System.Windows.Forms.Label();
+            this.shift_r_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel67 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label89 = new System.Windows.Forms.Label();
+            this.ctrl_l_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel68 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label90 = new System.Windows.Forms.Label();
+            this.fn_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel69 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label91 = new System.Windows.Forms.Label();
+            this.start_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel70 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label92 = new System.Windows.Forms.Label();
+            this.alt_l_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel71 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaElipsePanel72 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label93 = new System.Windows.Forms.Label();
+            this.alt_r_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel73 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label94 = new System.Windows.Forms.Label();
+            this.ctrl_r_btn = new System.Windows.Forms.Label();
             this.gunaElipsePanel74 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label95 = new System.Windows.Forms.Label();
+            this.arrow_left = new System.Windows.Forms.Label();
             this.gunaElipsePanel75 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label97 = new System.Windows.Forms.Label();
+            this.arrow_up = new System.Windows.Forms.Label();
             this.gunaElipsePanel76 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label98 = new System.Windows.Forms.Label();
+            this.arrow_down = new System.Windows.Forms.Label();
             this.gunaElipsePanel77 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label96 = new System.Windows.Forms.Label();
+            this.arrow_r = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.a_h = new System.Windows.Forms.Timer(this.components);
             this.gunaElipsePanel78 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label99 = new System.Windows.Forms.Label();
-            this.caps_up = new System.Windows.Forms.Timer(this.components);
-            this.shift_ = new System.Windows.Forms.Timer(this.components);
-            this.fn_ = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.del2_btn = new System.Windows.Forms.Label();
+            this.icon = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.min_win)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_win)).BeginInit();
             this.gunaElipsePanel9.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
@@ -239,18 +235,18 @@
             this.gunaElipsePanel13.SuspendLayout();
             this.gunaElipsePanel14.SuspendLayout();
             this.gunaElipsePanel15.SuspendLayout();
-            this.gunaElipsePanel16.SuspendLayout();
-            this.gunaElipsePanel17.SuspendLayout();
-            this.gunaElipsePanel18.SuspendLayout();
-            this.gunaElipsePanel19.SuspendLayout();
-            this.gunaElipsePanel20.SuspendLayout();
-            this.gunaElipsePanel21.SuspendLayout();
-            this.gunaElipsePanel22.SuspendLayout();
-            this.gunaElipsePanel23.SuspendLayout();
-            this.gunaElipsePanel24.SuspendLayout();
-            this.gunaElipsePanel25.SuspendLayout();
-            this.gunaElipsePanel26.SuspendLayout();
-            this.gunaElipsePanel27.SuspendLayout();
+            this._f1_p.SuspendLayout();
+            this._f2_p.SuspendLayout();
+            this._f3_p.SuspendLayout();
+            this._f4_p.SuspendLayout();
+            this._f5_p.SuspendLayout();
+            this._f6_p.SuspendLayout();
+            this._f7_p.SuspendLayout();
+            this._f8_p.SuspendLayout();
+            this._f9_p.SuspendLayout();
+            this._f10_p.SuspendLayout();
+            this._f11_p.SuspendLayout();
+            this._f12_p.SuspendLayout();
             this.gunaElipsePanel28.SuspendLayout();
             this.gunaElipsePanel29.SuspendLayout();
             this.gunaElipsePanel30.SuspendLayout();
@@ -301,77 +297,77 @@
             this.gunaElipsePanel76.SuspendLayout();
             this.gunaElipsePanel77.SuspendLayout();
             this.gunaElipsePanel78.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.Controls.Add(this.bunifuImageButton3);
+            this.panel4.Controls.Add(this.min_win);
             this.panel4.Location = new System.Drawing.Point(1405, 17);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(64, 69);
             this.panel4.TabIndex = 11;
             // 
-            // bunifuImageButton3
+            // min_win
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton3.Image = global::keyboard_.Properties.Resources.icons8_compress_32px;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(16, 16);
-            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(32, 35);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 3;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
+            this.min_win.BackColor = System.Drawing.Color.Transparent;
+            this.min_win.Image = global::keyboard_.Properties.Resources.icons8_compress_32px;
+            this.min_win.ImageActive = null;
+            this.min_win.Location = new System.Drawing.Point(16, 16);
+            this.min_win.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.min_win.Name = "min_win";
+            this.min_win.Size = new System.Drawing.Size(32, 35);
+            this.min_win.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.min_win.TabIndex = 3;
+            this.min_win.TabStop = false;
+            this.min_win.Zoom = 10;
+            this.min_win.Click += new System.EventHandler(this.min_win_Click);
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.bunifuImageButton1);
+            this.panel2.Controls.Add(this.close_win);
             this.panel2.Location = new System.Drawing.Point(1468, 17);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(64, 69);
             this.panel2.TabIndex = 10;
             // 
-            // bunifuImageButton1
+            // close_win
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = global::keyboard_.Properties.Resources.icons8_delete_32px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(16, 16);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(32, 35);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 3;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.close_win.BackColor = System.Drawing.Color.Transparent;
+            this.close_win.Image = global::keyboard_.Properties.Resources.icons8_delete_32px;
+            this.close_win.ImageActive = null;
+            this.close_win.Location = new System.Drawing.Point(16, 16);
+            this.close_win.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.close_win.Name = "close_win";
+            this.close_win.Size = new System.Drawing.Size(32, 35);
+            this.close_win.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_win.TabIndex = 3;
+            this.close_win.TabStop = false;
+            this.close_win.Zoom = 10;
+            this.close_win.Click += new System.EventHandler(this.close_win_Click);
             // 
-            // label1
+            // title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 35);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "NEAR KeyBoard";
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
+            this.title.ForeColor = System.Drawing.Color.White;
+            this.title.Location = new System.Drawing.Point(17, 17);
+            this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(219, 35);
+            this.title.TabIndex = 12;
+            this.title.Text = "NEAR KeyBoard";
             // 
             // gunaElipsePanel9
             // 
             this.gunaElipsePanel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel9.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel9.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel9.Controls.Add(this.label8);
+            this.gunaElipsePanel9.Controls.Add(this.del_btn);
             this.gunaElipsePanel9.Location = new System.Drawing.Point(1368, 178);
             this.gunaElipsePanel9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel9.Name = "gunaElipsePanel9";
@@ -382,20 +378,20 @@
             this.gunaElipsePanel9.MouseEnter += new System.EventHandler(this.gunaElipsePanel9_MouseEnter);
             this.gunaElipsePanel9.MouseLeave += new System.EventHandler(this.gunaElipsePanel9_MouseLeave);
             // 
-            // label8
+            // del_btn
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(52, 19);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 30);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "";
-            this.label8.Click += new System.EventHandler(this.gunaElipsePanel9_Click);
-            this.label8.MouseEnter += new System.EventHandler(this.gunaElipsePanel9_MouseEnter);
-            this.label8.MouseLeave += new System.EventHandler(this.gunaElipsePanel9_MouseLeave);
+            this.del_btn.AutoSize = true;
+            this.del_btn.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11F);
+            this.del_btn.ForeColor = System.Drawing.Color.White;
+            this.del_btn.Location = new System.Drawing.Point(52, 19);
+            this.del_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.del_btn.Name = "del_btn";
+            this.del_btn.Size = new System.Drawing.Size(43, 30);
+            this.del_btn.TabIndex = 8;
+            this.del_btn.Text = "";
+            this.del_btn.Click += new System.EventHandler(this.gunaElipsePanel9_Click);
+            this.del_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel9_MouseEnter);
+            this.del_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel9_MouseLeave);
             // 
             // gunaElipsePanel1
             // 
@@ -403,7 +399,7 @@
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.gunaElipsePanel1.Controls.Add(this._add_);
-            this.gunaElipsePanel1.Controls.Add(this.label2);
+            this.gunaElipsePanel1.Controls.Add(this.btn_eq);
             this.gunaElipsePanel1.Location = new System.Drawing.Point(1264, 178);
             this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
@@ -429,20 +425,20 @@
             this._add_.MouseEnter += new System.EventHandler(this.gunaElipsePanel1_MouseEnter);
             this._add_.MouseLeave += new System.EventHandler(this.gunaElipsePanel1_MouseLeave);
             // 
-            // label2
+            // btn_eq
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(37, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 39);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "=";
-            this.label2.Click += new System.EventHandler(this.gunaElipsePanel1_Click);
-            this.label2.MouseEnter += new System.EventHandler(this.gunaElipsePanel1_MouseEnter);
-            this.label2.MouseLeave += new System.EventHandler(this.gunaElipsePanel1_MouseLeave);
+            this.btn_eq.AutoSize = true;
+            this.btn_eq.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.btn_eq.ForeColor = System.Drawing.Color.White;
+            this.btn_eq.Location = new System.Drawing.Point(37, 22);
+            this.btn_eq.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btn_eq.Name = "btn_eq";
+            this.btn_eq.Size = new System.Drawing.Size(39, 39);
+            this.btn_eq.TabIndex = 8;
+            this.btn_eq.Text = "=";
+            this.btn_eq.Click += new System.EventHandler(this.gunaElipsePanel1_Click);
+            this.btn_eq.MouseEnter += new System.EventHandler(this.gunaElipsePanel1_MouseEnter);
+            this.btn_eq.MouseLeave += new System.EventHandler(this.gunaElipsePanel1_MouseLeave);
             // 
             // gunaElipsePanel2
             // 
@@ -450,7 +446,7 @@
             this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.gunaElipsePanel2.Controls.Add(this._min_);
-            this.gunaElipsePanel2.Controls.Add(this.label5);
+            this.gunaElipsePanel2.Controls.Add(this.min_btn);
             this.gunaElipsePanel2.Location = new System.Drawing.Point(1160, 178);
             this.gunaElipsePanel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel2.Name = "gunaElipsePanel2";
@@ -477,20 +473,20 @@
             this._min_.MouseEnter += new System.EventHandler(this.gunaElipsePanel2_MouseEnter);
             this._min_.MouseLeave += new System.EventHandler(this.gunaElipsePanel2_MouseLeave);
             // 
-            // label5
+            // min_btn
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(37, 22);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 39);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "-";
-            this.label5.Click += new System.EventHandler(this.gunaElipsePanel2_Click);
-            this.label5.MouseEnter += new System.EventHandler(this.gunaElipsePanel2_MouseEnter);
-            this.label5.MouseLeave += new System.EventHandler(this.gunaElipsePanel2_MouseLeave);
+            this.min_btn.AutoSize = true;
+            this.min_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.min_btn.ForeColor = System.Drawing.Color.White;
+            this.min_btn.Location = new System.Drawing.Point(37, 22);
+            this.min_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.min_btn.Name = "min_btn";
+            this.min_btn.Size = new System.Drawing.Size(30, 39);
+            this.min_btn.TabIndex = 8;
+            this.min_btn.Text = "-";
+            this.min_btn.Click += new System.EventHandler(this.gunaElipsePanel2_Click);
+            this.min_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel2_MouseEnter);
+            this.min_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel2_MouseLeave);
             // 
             // gunaElipsePanel3
             // 
@@ -1014,7 +1010,7 @@
             this.gunaElipsePanel15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel15.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel15.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel15.Controls.Add(this.label30);
+            this.gunaElipsePanel15.Controls.Add(this.esc_btn);
             this.gunaElipsePanel15.Location = new System.Drawing.Point(23, 103);
             this.gunaElipsePanel15.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel15.Name = "gunaElipsePanel15";
@@ -1025,36 +1021,36 @@
             this.gunaElipsePanel15.MouseEnter += new System.EventHandler(this.gunaElipsePanel15_MouseEnter);
             this.gunaElipsePanel15.MouseLeave += new System.EventHandler(this.gunaElipsePanel15_MouseLeave);
             // 
-            // label30
+            // esc_btn
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(16, 17);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(63, 39);
-            this.label30.TabIndex = 8;
-            this.label30.Text = "Esc";
-            this.label30.Click += new System.EventHandler(this.gunaElipsePanel15_Click);
-            this.label30.MouseEnter += new System.EventHandler(this.gunaElipsePanel15_MouseEnter);
-            this.label30.MouseLeave += new System.EventHandler(this.gunaElipsePanel15_MouseLeave);
+            this.esc_btn.AutoSize = true;
+            this.esc_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.esc_btn.ForeColor = System.Drawing.Color.White;
+            this.esc_btn.Location = new System.Drawing.Point(16, 17);
+            this.esc_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.esc_btn.Name = "esc_btn";
+            this.esc_btn.Size = new System.Drawing.Size(63, 39);
+            this.esc_btn.TabIndex = 8;
+            this.esc_btn.Text = "Esc";
+            this.esc_btn.Click += new System.EventHandler(this.gunaElipsePanel15_Click);
+            this.esc_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel15_MouseEnter);
+            this.esc_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel15_MouseLeave);
             // 
-            // gunaElipsePanel16
+            // _f1_p
             // 
-            this.gunaElipsePanel16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel16.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel16.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel16.Controls.Add(this._f1_);
-            this.gunaElipsePanel16.Location = new System.Drawing.Point(127, 103);
-            this.gunaElipsePanel16.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel16.Name = "gunaElipsePanel16";
-            this.gunaElipsePanel16.Radius = 5;
-            this.gunaElipsePanel16.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel16.TabIndex = 78;
-            this.gunaElipsePanel16.Click += new System.EventHandler(this.gunaElipsePanel16_Click);
-            this.gunaElipsePanel16.MouseEnter += new System.EventHandler(this.gunaElipsePanel16_MouseEnter);
-            this.gunaElipsePanel16.MouseLeave += new System.EventHandler(this.gunaElipsePanel16_MouseLeave);
+            this._f1_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f1_p.BackColor = System.Drawing.Color.Transparent;
+            this._f1_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f1_p.Controls.Add(this._f1_);
+            this._f1_p.Location = new System.Drawing.Point(127, 103);
+            this._f1_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f1_p.Name = "_f1_p";
+            this._f1_p.Radius = 5;
+            this._f1_p.Size = new System.Drawing.Size(95, 72);
+            this._f1_p.TabIndex = 78;
+            this._f1_p.Click += new System.EventHandler(this._f1_p_Click);
+            this._f1_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel16_MouseEnter);
+            this._f1_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel16_MouseLeave);
             // 
             // _f1_
             // 
@@ -1067,25 +1063,25 @@
             this._f1_.Size = new System.Drawing.Size(51, 39);
             this._f1_.TabIndex = 8;
             this._f1_.Text = "F1";
-            this._f1_.Click += new System.EventHandler(this.gunaElipsePanel16_Click);
+            this._f1_.Click += new System.EventHandler(this._f1_p_Click);
             this._f1_.MouseEnter += new System.EventHandler(this.gunaElipsePanel16_MouseEnter);
             this._f1_.MouseLeave += new System.EventHandler(this.gunaElipsePanel16_MouseLeave);
             // 
-            // gunaElipsePanel17
+            // _f2_p
             // 
-            this.gunaElipsePanel17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel17.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel17.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel17.Controls.Add(this._f2_);
-            this.gunaElipsePanel17.Location = new System.Drawing.Point(229, 103);
-            this.gunaElipsePanel17.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel17.Name = "gunaElipsePanel17";
-            this.gunaElipsePanel17.Radius = 5;
-            this.gunaElipsePanel17.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel17.TabIndex = 79;
-            this.gunaElipsePanel17.Click += new System.EventHandler(this._f2__Click);
-            this.gunaElipsePanel17.MouseEnter += new System.EventHandler(this.gunaElipsePanel17_MouseEnter);
-            this.gunaElipsePanel17.MouseLeave += new System.EventHandler(this.gunaElipsePanel17_MouseLeave);
+            this._f2_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f2_p.BackColor = System.Drawing.Color.Transparent;
+            this._f2_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f2_p.Controls.Add(this._f2_);
+            this._f2_p.Location = new System.Drawing.Point(229, 103);
+            this._f2_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f2_p.Name = "_f2_p";
+            this._f2_p.Radius = 5;
+            this._f2_p.Size = new System.Drawing.Size(95, 72);
+            this._f2_p.TabIndex = 79;
+            this._f2_p.Click += new System.EventHandler(this._f2__Click);
+            this._f2_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel17_MouseEnter);
+            this._f2_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel17_MouseLeave);
             // 
             // _f2_
             // 
@@ -1102,21 +1098,21 @@
             this._f2_.MouseEnter += new System.EventHandler(this.gunaElipsePanel17_MouseEnter);
             this._f2_.MouseLeave += new System.EventHandler(this.gunaElipsePanel17_MouseLeave);
             // 
-            // gunaElipsePanel18
+            // _f3_p
             // 
-            this.gunaElipsePanel18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel18.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel18.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel18.Controls.Add(this._f3_);
-            this.gunaElipsePanel18.Location = new System.Drawing.Point(332, 103);
-            this.gunaElipsePanel18.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel18.Name = "gunaElipsePanel18";
-            this.gunaElipsePanel18.Radius = 5;
-            this.gunaElipsePanel18.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel18.TabIndex = 80;
-            this.gunaElipsePanel18.Click += new System.EventHandler(this.gunaElipsePanel18_Click);
-            this.gunaElipsePanel18.MouseEnter += new System.EventHandler(this.gunaElipsePanel18_MouseEnter);
-            this.gunaElipsePanel18.MouseLeave += new System.EventHandler(this.gunaElipsePanel18_MouseLeave);
+            this._f3_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f3_p.BackColor = System.Drawing.Color.Transparent;
+            this._f3_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f3_p.Controls.Add(this._f3_);
+            this._f3_p.Location = new System.Drawing.Point(332, 103);
+            this._f3_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f3_p.Name = "_f3_p";
+            this._f3_p.Radius = 5;
+            this._f3_p.Size = new System.Drawing.Size(95, 72);
+            this._f3_p.TabIndex = 80;
+            this._f3_p.Click += new System.EventHandler(this._f3_p_Click);
+            this._f3_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel18_MouseEnter);
+            this._f3_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel18_MouseLeave);
             // 
             // _f3_
             // 
@@ -1129,25 +1125,25 @@
             this._f3_.Size = new System.Drawing.Size(51, 39);
             this._f3_.TabIndex = 8;
             this._f3_.Text = "F3";
-            this._f3_.Click += new System.EventHandler(this.gunaElipsePanel18_Click);
+            this._f3_.Click += new System.EventHandler(this._f3_p_Click);
             this._f3_.MouseEnter += new System.EventHandler(this.gunaElipsePanel18_MouseEnter);
             this._f3_.MouseLeave += new System.EventHandler(this.gunaElipsePanel18_MouseLeave);
             // 
-            // gunaElipsePanel19
+            // _f4_p
             // 
-            this.gunaElipsePanel19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel19.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel19.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel19.Controls.Add(this._f4_);
-            this.gunaElipsePanel19.Location = new System.Drawing.Point(436, 103);
-            this.gunaElipsePanel19.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel19.Name = "gunaElipsePanel19";
-            this.gunaElipsePanel19.Radius = 5;
-            this.gunaElipsePanel19.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel19.TabIndex = 81;
-            this.gunaElipsePanel19.Click += new System.EventHandler(this.gunaElipsePanel19_Click);
-            this.gunaElipsePanel19.MouseEnter += new System.EventHandler(this.gunaElipsePanel19_MouseEnter);
-            this.gunaElipsePanel19.MouseLeave += new System.EventHandler(this.gunaElipsePanel19_MouseLeave);
+            this._f4_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f4_p.BackColor = System.Drawing.Color.Transparent;
+            this._f4_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f4_p.Controls.Add(this._f4_);
+            this._f4_p.Location = new System.Drawing.Point(436, 103);
+            this._f4_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f4_p.Name = "_f4_p";
+            this._f4_p.Radius = 5;
+            this._f4_p.Size = new System.Drawing.Size(95, 72);
+            this._f4_p.TabIndex = 81;
+            this._f4_p.Click += new System.EventHandler(this._f4_p_Click);
+            this._f4_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel19_MouseEnter);
+            this._f4_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel19_MouseLeave);
             // 
             // _f4_
             // 
@@ -1160,25 +1156,25 @@
             this._f4_.Size = new System.Drawing.Size(51, 39);
             this._f4_.TabIndex = 8;
             this._f4_.Text = "F4";
-            this._f4_.Click += new System.EventHandler(this.gunaElipsePanel19_Click);
+            this._f4_.Click += new System.EventHandler(this._f4_p_Click);
             this._f4_.MouseEnter += new System.EventHandler(this.gunaElipsePanel19_MouseEnter);
             this._f4_.MouseLeave += new System.EventHandler(this.gunaElipsePanel19_MouseLeave);
             // 
-            // gunaElipsePanel20
+            // _f5_p
             // 
-            this.gunaElipsePanel20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel20.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel20.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel20.Controls.Add(this._f5_);
-            this.gunaElipsePanel20.Location = new System.Drawing.Point(540, 103);
-            this.gunaElipsePanel20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel20.Name = "gunaElipsePanel20";
-            this.gunaElipsePanel20.Radius = 5;
-            this.gunaElipsePanel20.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel20.TabIndex = 82;
-            this.gunaElipsePanel20.Click += new System.EventHandler(this.gunaElipsePanel20_Click);
-            this.gunaElipsePanel20.MouseEnter += new System.EventHandler(this.gunaElipsePanel20_MouseEnter);
-            this.gunaElipsePanel20.MouseLeave += new System.EventHandler(this.gunaElipsePanel20_MouseLeave);
+            this._f5_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f5_p.BackColor = System.Drawing.Color.Transparent;
+            this._f5_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f5_p.Controls.Add(this._f5_);
+            this._f5_p.Location = new System.Drawing.Point(540, 103);
+            this._f5_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f5_p.Name = "_f5_p";
+            this._f5_p.Radius = 5;
+            this._f5_p.Size = new System.Drawing.Size(95, 72);
+            this._f5_p.TabIndex = 82;
+            this._f5_p.Click += new System.EventHandler(this._f5_p_Click);
+            this._f5_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel20_MouseEnter);
+            this._f5_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel20_MouseLeave);
             // 
             // _f5_
             // 
@@ -1191,25 +1187,25 @@
             this._f5_.Size = new System.Drawing.Size(51, 39);
             this._f5_.TabIndex = 8;
             this._f5_.Text = "F5";
-            this._f5_.Click += new System.EventHandler(this.gunaElipsePanel20_Click);
+            this._f5_.Click += new System.EventHandler(this._f5_p_Click);
             this._f5_.MouseEnter += new System.EventHandler(this.gunaElipsePanel20_MouseEnter);
             this._f5_.MouseLeave += new System.EventHandler(this.gunaElipsePanel20_MouseLeave);
             // 
-            // gunaElipsePanel21
+            // _f6_p
             // 
-            this.gunaElipsePanel21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel21.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel21.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel21.Controls.Add(this._f6_);
-            this.gunaElipsePanel21.Location = new System.Drawing.Point(644, 103);
-            this.gunaElipsePanel21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel21.Name = "gunaElipsePanel21";
-            this.gunaElipsePanel21.Radius = 5;
-            this.gunaElipsePanel21.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel21.TabIndex = 83;
-            this.gunaElipsePanel21.Click += new System.EventHandler(this.gunaElipsePanel21_Click);
-            this.gunaElipsePanel21.MouseEnter += new System.EventHandler(this.gunaElipsePanel21_MouseEnter);
-            this.gunaElipsePanel21.MouseLeave += new System.EventHandler(this.gunaElipsePanel21_MouseLeave);
+            this._f6_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f6_p.BackColor = System.Drawing.Color.Transparent;
+            this._f6_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f6_p.Controls.Add(this._f6_);
+            this._f6_p.Location = new System.Drawing.Point(644, 103);
+            this._f6_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f6_p.Name = "_f6_p";
+            this._f6_p.Radius = 5;
+            this._f6_p.Size = new System.Drawing.Size(95, 72);
+            this._f6_p.TabIndex = 83;
+            this._f6_p.Click += new System.EventHandler(this._f6_p_Click);
+            this._f6_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel21_MouseEnter);
+            this._f6_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel21_MouseLeave);
             // 
             // _f6_
             // 
@@ -1222,25 +1218,25 @@
             this._f6_.Size = new System.Drawing.Size(51, 39);
             this._f6_.TabIndex = 8;
             this._f6_.Text = "F6";
-            this._f6_.Click += new System.EventHandler(this.gunaElipsePanel21_Click);
+            this._f6_.Click += new System.EventHandler(this._f6_p_Click);
             this._f6_.MouseEnter += new System.EventHandler(this.gunaElipsePanel21_MouseEnter);
             this._f6_.MouseLeave += new System.EventHandler(this.gunaElipsePanel21_MouseLeave);
             // 
-            // gunaElipsePanel22
+            // _f7_p
             // 
-            this.gunaElipsePanel22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel22.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel22.Controls.Add(this._f7_);
-            this.gunaElipsePanel22.Location = new System.Drawing.Point(748, 103);
-            this.gunaElipsePanel22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel22.Name = "gunaElipsePanel22";
-            this.gunaElipsePanel22.Radius = 5;
-            this.gunaElipsePanel22.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel22.TabIndex = 84;
-            this.gunaElipsePanel22.Click += new System.EventHandler(this.gunaElipsePanel22_Click);
-            this.gunaElipsePanel22.MouseEnter += new System.EventHandler(this.gunaElipsePanel22_MouseEnter);
-            this.gunaElipsePanel22.MouseLeave += new System.EventHandler(this.gunaElipsePanel22_MouseLeave);
+            this._f7_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f7_p.BackColor = System.Drawing.Color.Transparent;
+            this._f7_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f7_p.Controls.Add(this._f7_);
+            this._f7_p.Location = new System.Drawing.Point(748, 103);
+            this._f7_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f7_p.Name = "_f7_p";
+            this._f7_p.Radius = 5;
+            this._f7_p.Size = new System.Drawing.Size(95, 72);
+            this._f7_p.TabIndex = 84;
+            this._f7_p.Click += new System.EventHandler(this._f7_p_Click);
+            this._f7_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel22_MouseEnter);
+            this._f7_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel22_MouseLeave);
             // 
             // _f7_
             // 
@@ -1253,25 +1249,25 @@
             this._f7_.Size = new System.Drawing.Size(51, 39);
             this._f7_.TabIndex = 8;
             this._f7_.Text = "F7";
-            this._f7_.Click += new System.EventHandler(this.gunaElipsePanel22_Click);
+            this._f7_.Click += new System.EventHandler(this._f7_p_Click);
             this._f7_.MouseEnter += new System.EventHandler(this.gunaElipsePanel22_MouseEnter);
             this._f7_.MouseLeave += new System.EventHandler(this.gunaElipsePanel22_MouseLeave);
             // 
-            // gunaElipsePanel23
+            // _f8_p
             // 
-            this.gunaElipsePanel23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel23.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel23.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel23.Controls.Add(this._f8_);
-            this.gunaElipsePanel23.Location = new System.Drawing.Point(851, 103);
-            this.gunaElipsePanel23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel23.Name = "gunaElipsePanel23";
-            this.gunaElipsePanel23.Radius = 5;
-            this.gunaElipsePanel23.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel23.TabIndex = 85;
-            this.gunaElipsePanel23.Click += new System.EventHandler(this.gunaElipsePanel23_Click);
-            this.gunaElipsePanel23.MouseEnter += new System.EventHandler(this.gunaElipsePanel23_MouseEnter);
-            this.gunaElipsePanel23.MouseLeave += new System.EventHandler(this.gunaElipsePanel23_MouseLeave);
+            this._f8_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f8_p.BackColor = System.Drawing.Color.Transparent;
+            this._f8_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f8_p.Controls.Add(this._f8_);
+            this._f8_p.Location = new System.Drawing.Point(851, 103);
+            this._f8_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f8_p.Name = "_f8_p";
+            this._f8_p.Radius = 5;
+            this._f8_p.Size = new System.Drawing.Size(95, 72);
+            this._f8_p.TabIndex = 85;
+            this._f8_p.Click += new System.EventHandler(this._f8_p_Click);
+            this._f8_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel23_MouseEnter);
+            this._f8_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel23_MouseLeave);
             // 
             // _f8_
             // 
@@ -1284,25 +1280,25 @@
             this._f8_.Size = new System.Drawing.Size(51, 39);
             this._f8_.TabIndex = 8;
             this._f8_.Text = "F8";
-            this._f8_.Click += new System.EventHandler(this.gunaElipsePanel23_Click);
+            this._f8_.Click += new System.EventHandler(this._f8_p_Click);
             this._f8_.MouseEnter += new System.EventHandler(this.gunaElipsePanel23_MouseEnter);
             this._f8_.MouseLeave += new System.EventHandler(this.gunaElipsePanel23_MouseLeave);
             // 
-            // gunaElipsePanel24
+            // _f9_p
             // 
-            this.gunaElipsePanel24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel24.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel24.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel24.Controls.Add(this._f9_);
-            this.gunaElipsePanel24.Location = new System.Drawing.Point(953, 103);
-            this.gunaElipsePanel24.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel24.Name = "gunaElipsePanel24";
-            this.gunaElipsePanel24.Radius = 5;
-            this.gunaElipsePanel24.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel24.TabIndex = 86;
-            this.gunaElipsePanel24.Click += new System.EventHandler(this.gunaElipsePanel24_Click);
-            this.gunaElipsePanel24.MouseEnter += new System.EventHandler(this.gunaElipsePanel24_MouseEnter);
-            this.gunaElipsePanel24.MouseLeave += new System.EventHandler(this.gunaElipsePanel24_MouseLeave);
+            this._f9_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f9_p.BackColor = System.Drawing.Color.Transparent;
+            this._f9_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f9_p.Controls.Add(this._f9_);
+            this._f9_p.Location = new System.Drawing.Point(953, 103);
+            this._f9_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f9_p.Name = "_f9_p";
+            this._f9_p.Radius = 5;
+            this._f9_p.Size = new System.Drawing.Size(95, 72);
+            this._f9_p.TabIndex = 86;
+            this._f9_p.Click += new System.EventHandler(this._f9_p_Click);
+            this._f9_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel24_MouseEnter);
+            this._f9_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel24_MouseLeave);
             // 
             // _f9_
             // 
@@ -1315,25 +1311,25 @@
             this._f9_.Size = new System.Drawing.Size(51, 39);
             this._f9_.TabIndex = 8;
             this._f9_.Text = "F9";
-            this._f9_.Click += new System.EventHandler(this.gunaElipsePanel24_Click);
+            this._f9_.Click += new System.EventHandler(this._f9_p_Click);
             this._f9_.MouseEnter += new System.EventHandler(this.gunaElipsePanel24_MouseEnter);
             this._f9_.MouseLeave += new System.EventHandler(this.gunaElipsePanel24_MouseLeave);
             // 
-            // gunaElipsePanel25
+            // _f10_p
             // 
-            this.gunaElipsePanel25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel25.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel25.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel25.Controls.Add(this._f10_);
-            this.gunaElipsePanel25.Location = new System.Drawing.Point(1057, 103);
-            this.gunaElipsePanel25.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel25.Name = "gunaElipsePanel25";
-            this.gunaElipsePanel25.Radius = 5;
-            this.gunaElipsePanel25.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel25.TabIndex = 87;
-            this.gunaElipsePanel25.Click += new System.EventHandler(this._f10__Click);
-            this.gunaElipsePanel25.MouseEnter += new System.EventHandler(this.gunaElipsePanel25_MouseEnter);
-            this.gunaElipsePanel25.MouseLeave += new System.EventHandler(this.gunaElipsePanel25_MouseLeave);
+            this._f10_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f10_p.BackColor = System.Drawing.Color.Transparent;
+            this._f10_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f10_p.Controls.Add(this._f10_);
+            this._f10_p.Location = new System.Drawing.Point(1057, 103);
+            this._f10_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f10_p.Name = "_f10_p";
+            this._f10_p.Radius = 5;
+            this._f10_p.Size = new System.Drawing.Size(95, 72);
+            this._f10_p.TabIndex = 87;
+            this._f10_p.Click += new System.EventHandler(this._f10__Click);
+            this._f10_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel25_MouseEnter);
+            this._f10_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel25_MouseLeave);
             // 
             // _f10_
             // 
@@ -1350,21 +1346,21 @@
             this._f10_.MouseEnter += new System.EventHandler(this.gunaElipsePanel25_MouseEnter);
             this._f10_.MouseLeave += new System.EventHandler(this.gunaElipsePanel25_MouseLeave);
             // 
-            // gunaElipsePanel26
+            // _f11_p
             // 
-            this.gunaElipsePanel26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel26.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel26.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel26.Controls.Add(this._f11_);
-            this.gunaElipsePanel26.Location = new System.Drawing.Point(1160, 103);
-            this.gunaElipsePanel26.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel26.Name = "gunaElipsePanel26";
-            this.gunaElipsePanel26.Radius = 5;
-            this.gunaElipsePanel26.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel26.TabIndex = 88;
-            this.gunaElipsePanel26.Click += new System.EventHandler(this.gunaElipsePanel26_Click);
-            this.gunaElipsePanel26.MouseEnter += new System.EventHandler(this.gunaElipsePanel26_MouseEnter);
-            this.gunaElipsePanel26.MouseLeave += new System.EventHandler(this.gunaElipsePanel26_MouseLeave);
+            this._f11_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f11_p.BackColor = System.Drawing.Color.Transparent;
+            this._f11_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f11_p.Controls.Add(this._f11_);
+            this._f11_p.Location = new System.Drawing.Point(1160, 103);
+            this._f11_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f11_p.Name = "_f11_p";
+            this._f11_p.Radius = 5;
+            this._f11_p.Size = new System.Drawing.Size(95, 72);
+            this._f11_p.TabIndex = 88;
+            this._f11_p.Click += new System.EventHandler(this._f11_p_Click);
+            this._f11_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel26_MouseEnter);
+            this._f11_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel26_MouseLeave);
             // 
             // _f11_
             // 
@@ -1377,25 +1373,25 @@
             this._f11_.Size = new System.Drawing.Size(69, 39);
             this._f11_.TabIndex = 8;
             this._f11_.Text = "F11";
-            this._f11_.Click += new System.EventHandler(this.gunaElipsePanel26_Click);
+            this._f11_.Click += new System.EventHandler(this._f11_p_Click);
             this._f11_.MouseEnter += new System.EventHandler(this.gunaElipsePanel26_MouseEnter);
             this._f11_.MouseLeave += new System.EventHandler(this.gunaElipsePanel26_MouseLeave);
             // 
-            // gunaElipsePanel27
+            // _f12_p
             // 
-            this.gunaElipsePanel27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaElipsePanel27.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel27.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel27.Controls.Add(this._f12_);
-            this.gunaElipsePanel27.Location = new System.Drawing.Point(1264, 103);
-            this.gunaElipsePanel27.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaElipsePanel27.Name = "gunaElipsePanel27";
-            this.gunaElipsePanel27.Radius = 5;
-            this.gunaElipsePanel27.Size = new System.Drawing.Size(95, 72);
-            this.gunaElipsePanel27.TabIndex = 89;
-            this.gunaElipsePanel27.Click += new System.EventHandler(this.gunaElipsePanel27_Click);
-            this.gunaElipsePanel27.MouseEnter += new System.EventHandler(this.gunaElipsePanel27_MouseEnter);
-            this.gunaElipsePanel27.MouseLeave += new System.EventHandler(this.gunaElipsePanel27_MouseLeave);
+            this._f12_p.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._f12_p.BackColor = System.Drawing.Color.Transparent;
+            this._f12_p.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this._f12_p.Controls.Add(this._f12_);
+            this._f12_p.Location = new System.Drawing.Point(1264, 103);
+            this._f12_p.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._f12_p.Name = "_f12_p";
+            this._f12_p.Radius = 5;
+            this._f12_p.Size = new System.Drawing.Size(95, 72);
+            this._f12_p.TabIndex = 89;
+            this._f12_p.Click += new System.EventHandler(this._f12_p_Click);
+            this._f12_p.MouseEnter += new System.EventHandler(this.gunaElipsePanel27_MouseEnter);
+            this._f12_p.MouseLeave += new System.EventHandler(this.gunaElipsePanel27_MouseLeave);
             // 
             // _f12_
             // 
@@ -1408,7 +1404,7 @@
             this._f12_.Size = new System.Drawing.Size(69, 39);
             this._f12_.TabIndex = 8;
             this._f12_.Text = "F12";
-            this._f12_.Click += new System.EventHandler(this.gunaElipsePanel27_Click);
+            this._f12_.Click += new System.EventHandler(this._f12_p_Click);
             this._f12_.MouseEnter += new System.EventHandler(this.gunaElipsePanel27_MouseEnter);
             this._f12_.MouseLeave += new System.EventHandler(this.gunaElipsePanel27_MouseLeave);
             // 
@@ -1417,7 +1413,7 @@
             this.gunaElipsePanel28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel28.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel28.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel28.Controls.Add(this.label42);
+            this.gunaElipsePanel28.Controls.Add(this.tab_btn);
             this.gunaElipsePanel28.Location = new System.Drawing.Point(23, 256);
             this.gunaElipsePanel28.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel28.Name = "gunaElipsePanel28";
@@ -1428,20 +1424,20 @@
             this.gunaElipsePanel28.MouseEnter += new System.EventHandler(this.gunaElipsePanel28_MouseEnter);
             this.gunaElipsePanel28.MouseLeave += new System.EventHandler(this.gunaElipsePanel28_MouseLeave);
             // 
-            // label42
+            // tab_btn
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label42.ForeColor = System.Drawing.Color.White;
-            this.label42.Location = new System.Drawing.Point(7, 17);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(70, 39);
-            this.label42.TabIndex = 8;
-            this.label42.Text = "Tab";
-            this.label42.Click += new System.EventHandler(this.gunaElipsePanel28_Click);
-            this.label42.MouseEnter += new System.EventHandler(this.gunaElipsePanel28_MouseEnter);
-            this.label42.MouseLeave += new System.EventHandler(this.gunaElipsePanel28_MouseLeave);
+            this.tab_btn.AutoSize = true;
+            this.tab_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.tab_btn.ForeColor = System.Drawing.Color.White;
+            this.tab_btn.Location = new System.Drawing.Point(7, 17);
+            this.tab_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tab_btn.Name = "tab_btn";
+            this.tab_btn.Size = new System.Drawing.Size(70, 39);
+            this.tab_btn.TabIndex = 8;
+            this.tab_btn.Text = "Tab";
+            this.tab_btn.Click += new System.EventHandler(this.gunaElipsePanel28_Click);
+            this.tab_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel28_MouseEnter);
+            this.tab_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel28_MouseLeave);
             // 
             // gunaElipsePanel29
             // 
@@ -1899,7 +1895,7 @@
             this.gunaElipsePanel42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel42.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel42.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel42.Controls.Add(this.label59);
+            this.gunaElipsePanel42.Controls.Add(this.capslk_btn);
             this.gunaElipsePanel42.Location = new System.Drawing.Point(23, 333);
             this.gunaElipsePanel42.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel42.Name = "gunaElipsePanel42";
@@ -1910,20 +1906,20 @@
             this.gunaElipsePanel42.MouseEnter += new System.EventHandler(this.gunaElipsePanel42_MouseEnter);
             this.gunaElipsePanel42.MouseLeave += new System.EventHandler(this.gunaElipsePanel42_MouseLeave);
             // 
-            // label59
+            // capslk_btn
             // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label59.ForeColor = System.Drawing.Color.White;
-            this.label59.Location = new System.Drawing.Point(7, 16);
-            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(118, 39);
-            this.label59.TabIndex = 8;
-            this.label59.Text = "CapsLk";
-            this.label59.Click += new System.EventHandler(this.label59_Click);
-            this.label59.MouseEnter += new System.EventHandler(this.gunaElipsePanel42_MouseEnter);
-            this.label59.MouseLeave += new System.EventHandler(this.gunaElipsePanel42_MouseLeave);
+            this.capslk_btn.AutoSize = true;
+            this.capslk_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.capslk_btn.ForeColor = System.Drawing.Color.White;
+            this.capslk_btn.Location = new System.Drawing.Point(7, 16);
+            this.capslk_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.capslk_btn.Name = "capslk_btn";
+            this.capslk_btn.Size = new System.Drawing.Size(118, 39);
+            this.capslk_btn.TabIndex = 8;
+            this.capslk_btn.Text = "CapsLk";
+            this.capslk_btn.Click += new System.EventHandler(this.label59_Click);
+            this.capslk_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel42_MouseEnter);
+            this.capslk_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel42_MouseLeave);
             // 
             // gunaElipsePanel43
             // 
@@ -2303,7 +2299,7 @@
             this.gunaElipsePanel54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel54.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel54.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel54.Controls.Add(this.label74);
+            this.gunaElipsePanel54.Controls.Add(this.enter_btn);
             this.gunaElipsePanel54.Location = new System.Drawing.Point(1340, 333);
             this.gunaElipsePanel54.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel54.Name = "gunaElipsePanel54";
@@ -2314,27 +2310,27 @@
             this.gunaElipsePanel54.MouseEnter += new System.EventHandler(this.gunaElipsePanel54_MouseEnter);
             this.gunaElipsePanel54.MouseLeave += new System.EventHandler(this.gunaElipsePanel54_MouseLeave);
             // 
-            // label74
+            // enter_btn
             // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label74.ForeColor = System.Drawing.Color.White;
-            this.label74.Location = new System.Drawing.Point(85, 17);
-            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(91, 39);
-            this.label74.TabIndex = 8;
-            this.label74.Text = "Enter";
-            this.label74.Click += new System.EventHandler(this.gunaElipsePanel54_Click);
-            this.label74.MouseEnter += new System.EventHandler(this.gunaElipsePanel54_MouseEnter);
-            this.label74.MouseLeave += new System.EventHandler(this.gunaElipsePanel54_MouseLeave);
+            this.enter_btn.AutoSize = true;
+            this.enter_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.enter_btn.ForeColor = System.Drawing.Color.White;
+            this.enter_btn.Location = new System.Drawing.Point(85, 17);
+            this.enter_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.enter_btn.Name = "enter_btn";
+            this.enter_btn.Size = new System.Drawing.Size(91, 39);
+            this.enter_btn.TabIndex = 8;
+            this.enter_btn.Text = "Enter";
+            this.enter_btn.Click += new System.EventHandler(this.gunaElipsePanel54_Click);
+            this.enter_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel54_MouseEnter);
+            this.enter_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel54_MouseLeave);
             // 
             // gunaElipsePanel55
             // 
             this.gunaElipsePanel55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel55.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel55.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel55.Controls.Add(this.label73);
+            this.gunaElipsePanel55.Controls.Add(this.shift_l_btn);
             this.gunaElipsePanel55.Location = new System.Drawing.Point(24, 409);
             this.gunaElipsePanel55.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel55.Name = "gunaElipsePanel55";
@@ -2345,20 +2341,20 @@
             this.gunaElipsePanel55.MouseEnter += new System.EventHandler(this.gunaElipsePanel55_MouseEnter);
             this.gunaElipsePanel55.MouseLeave += new System.EventHandler(this.gunaElipsePanel55_MouseLeave);
             // 
-            // label73
+            // shift_l_btn
             // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label73.ForeColor = System.Drawing.Color.White;
-            this.label73.Location = new System.Drawing.Point(7, 16);
-            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(81, 39);
-            this.label73.TabIndex = 8;
-            this.label73.Text = "Shift";
-            this.label73.Click += new System.EventHandler(this.label73_Click);
-            this.label73.MouseEnter += new System.EventHandler(this.gunaElipsePanel55_MouseEnter);
-            this.label73.MouseLeave += new System.EventHandler(this.gunaElipsePanel55_MouseLeave);
+            this.shift_l_btn.AutoSize = true;
+            this.shift_l_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.shift_l_btn.ForeColor = System.Drawing.Color.White;
+            this.shift_l_btn.Location = new System.Drawing.Point(7, 16);
+            this.shift_l_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.shift_l_btn.Name = "shift_l_btn";
+            this.shift_l_btn.Size = new System.Drawing.Size(81, 39);
+            this.shift_l_btn.TabIndex = 8;
+            this.shift_l_btn.Text = "Shift";
+            this.shift_l_btn.Click += new System.EventHandler(this.label73_Click);
+            this.shift_l_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel55_MouseEnter);
+            this.shift_l_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel55_MouseLeave);
             // 
             // gunaElipsePanel56
             // 
@@ -2723,7 +2719,7 @@
             this.gunaElipsePanel66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel66.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel66.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel66.Controls.Add(this.label88);
+            this.gunaElipsePanel66.Controls.Add(this.shift_r_btn);
             this.gunaElipsePanel66.Location = new System.Drawing.Point(1272, 409);
             this.gunaElipsePanel66.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel66.Name = "gunaElipsePanel66";
@@ -2734,27 +2730,27 @@
             this.gunaElipsePanel66.MouseEnter += new System.EventHandler(this.gunaElipsePanel66_MouseEnter);
             this.gunaElipsePanel66.MouseLeave += new System.EventHandler(this.gunaElipsePanel66_MouseLeave);
             // 
-            // label88
+            // shift_r_btn
             // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label88.ForeColor = System.Drawing.Color.White;
-            this.label88.Location = new System.Drawing.Point(161, 16);
-            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(81, 39);
-            this.label88.TabIndex = 8;
-            this.label88.Text = "Shift";
-            this.label88.Click += new System.EventHandler(this.label73_Click);
-            this.label88.MouseEnter += new System.EventHandler(this.gunaElipsePanel66_MouseEnter);
-            this.label88.MouseLeave += new System.EventHandler(this.gunaElipsePanel66_MouseLeave);
+            this.shift_r_btn.AutoSize = true;
+            this.shift_r_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.shift_r_btn.ForeColor = System.Drawing.Color.White;
+            this.shift_r_btn.Location = new System.Drawing.Point(161, 16);
+            this.shift_r_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.shift_r_btn.Name = "shift_r_btn";
+            this.shift_r_btn.Size = new System.Drawing.Size(81, 39);
+            this.shift_r_btn.TabIndex = 8;
+            this.shift_r_btn.Text = "Shift";
+            this.shift_r_btn.Click += new System.EventHandler(this.label73_Click);
+            this.shift_r_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel66_MouseEnter);
+            this.shift_r_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel66_MouseLeave);
             // 
             // gunaElipsePanel67
             // 
             this.gunaElipsePanel67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel67.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel67.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel67.Controls.Add(this.label89);
+            this.gunaElipsePanel67.Controls.Add(this.ctrl_l_btn);
             this.gunaElipsePanel67.Location = new System.Drawing.Point(23, 485);
             this.gunaElipsePanel67.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel67.Name = "gunaElipsePanel67";
@@ -2765,27 +2761,27 @@
             this.gunaElipsePanel67.MouseEnter += new System.EventHandler(this.gunaElipsePanel67_MouseEnter);
             this.gunaElipsePanel67.MouseLeave += new System.EventHandler(this.gunaElipsePanel67_MouseLeave);
             // 
-            // label89
+            // ctrl_l_btn
             // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label89.ForeColor = System.Drawing.Color.White;
-            this.label89.Location = new System.Drawing.Point(7, 17);
-            this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(67, 39);
-            this.label89.TabIndex = 8;
-            this.label89.Text = "Ctrl";
-            this.label89.Click += new System.EventHandler(this.gunaElipsePanel67_Click);
-            this.label89.MouseEnter += new System.EventHandler(this.gunaElipsePanel67_MouseEnter);
-            this.label89.MouseLeave += new System.EventHandler(this.gunaElipsePanel67_MouseLeave);
+            this.ctrl_l_btn.AutoSize = true;
+            this.ctrl_l_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.ctrl_l_btn.ForeColor = System.Drawing.Color.White;
+            this.ctrl_l_btn.Location = new System.Drawing.Point(7, 17);
+            this.ctrl_l_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ctrl_l_btn.Name = "ctrl_l_btn";
+            this.ctrl_l_btn.Size = new System.Drawing.Size(67, 39);
+            this.ctrl_l_btn.TabIndex = 8;
+            this.ctrl_l_btn.Text = "Ctrl";
+            this.ctrl_l_btn.Click += new System.EventHandler(this.gunaElipsePanel67_Click);
+            this.ctrl_l_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel67_MouseEnter);
+            this.ctrl_l_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel67_MouseLeave);
             // 
             // gunaElipsePanel68
             // 
             this.gunaElipsePanel68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel68.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel68.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel68.Controls.Add(this.label90);
+            this.gunaElipsePanel68.Controls.Add(this.fn_btn);
             this.gunaElipsePanel68.Location = new System.Drawing.Point(152, 485);
             this.gunaElipsePanel68.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel68.Name = "gunaElipsePanel68";
@@ -2796,58 +2792,58 @@
             this.gunaElipsePanel68.MouseEnter += new System.EventHandler(this.gunaElipsePanel68_MouseEnter);
             this.gunaElipsePanel68.MouseLeave += new System.EventHandler(this.gunaElipsePanel68_MouseLeave);
             // 
-            // label90
+            // fn_btn
             // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label90.ForeColor = System.Drawing.Color.White;
-            this.label90.Location = new System.Drawing.Point(20, 16);
-            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(51, 39);
-            this.label90.TabIndex = 8;
-            this.label90.Text = "Fn";
-            this.label90.Click += new System.EventHandler(this.gunaElipsePanel68_Click);
-            this.label90.MouseEnter += new System.EventHandler(this.gunaElipsePanel68_MouseEnter);
-            this.label90.MouseLeave += new System.EventHandler(this.gunaElipsePanel68_MouseLeave);
+            this.fn_btn.AutoSize = true;
+            this.fn_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.fn_btn.ForeColor = System.Drawing.Color.White;
+            this.fn_btn.Location = new System.Drawing.Point(20, 16);
+            this.fn_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fn_btn.Name = "fn_btn";
+            this.fn_btn.Size = new System.Drawing.Size(51, 39);
+            this.fn_btn.TabIndex = 8;
+            this.fn_btn.Text = "Fn";
+            this.fn_btn.Click += new System.EventHandler(this.gunaElipsePanel68_Click);
+            this.fn_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel68_MouseEnter);
+            this.fn_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel68_MouseLeave);
             // 
             // gunaElipsePanel69
             // 
             this.gunaElipsePanel69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel69.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel69.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel69.Controls.Add(this.label91);
+            this.gunaElipsePanel69.Controls.Add(this.start_btn);
             this.gunaElipsePanel69.Location = new System.Drawing.Point(256, 485);
             this.gunaElipsePanel69.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel69.Name = "gunaElipsePanel69";
             this.gunaElipsePanel69.Radius = 5;
             this.gunaElipsePanel69.Size = new System.Drawing.Size(95, 72);
             this.gunaElipsePanel69.TabIndex = 131;
-            this.gunaElipsePanel69.Click += new System.EventHandler(this.label91_Click);
+            this.gunaElipsePanel69.Click += new System.EventHandler(this.start_Click);
             this.gunaElipsePanel69.MouseEnter += new System.EventHandler(this.gunaElipsePanel69_MouseEnter);
             this.gunaElipsePanel69.MouseLeave += new System.EventHandler(this.gunaElipsePanel69_MouseLeave);
             // 
-            // label91
+            // start_btn
             // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15F);
-            this.label91.ForeColor = System.Drawing.Color.White;
-            this.label91.Location = new System.Drawing.Point(20, 16);
-            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(57, 40);
-            this.label91.TabIndex = 9;
-            this.label91.Text = "";
-            this.label91.Click += new System.EventHandler(this.label91_Click);
-            this.label91.MouseEnter += new System.EventHandler(this.gunaElipsePanel69_MouseEnter);
-            this.label91.MouseLeave += new System.EventHandler(this.gunaElipsePanel69_MouseLeave);
+            this.start_btn.AutoSize = true;
+            this.start_btn.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15F);
+            this.start_btn.ForeColor = System.Drawing.Color.White;
+            this.start_btn.Location = new System.Drawing.Point(20, 16);
+            this.start_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.start_btn.Name = "start_btn";
+            this.start_btn.Size = new System.Drawing.Size(57, 40);
+            this.start_btn.TabIndex = 9;
+            this.start_btn.Text = "";
+            this.start_btn.Click += new System.EventHandler(this.start_Click);
+            this.start_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel69_MouseEnter);
+            this.start_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel69_MouseLeave);
             // 
             // gunaElipsePanel70
             // 
             this.gunaElipsePanel70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel70.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel70.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel70.Controls.Add(this.label92);
+            this.gunaElipsePanel70.Controls.Add(this.alt_l_btn);
             this.gunaElipsePanel70.Location = new System.Drawing.Point(360, 485);
             this.gunaElipsePanel70.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel70.Name = "gunaElipsePanel70";
@@ -2858,20 +2854,20 @@
             this.gunaElipsePanel70.MouseEnter += new System.EventHandler(this.gunaElipsePanel70_MouseEnter);
             this.gunaElipsePanel70.MouseLeave += new System.EventHandler(this.gunaElipsePanel70_MouseLeave);
             // 
-            // label92
+            // alt_l_btn
             // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label92.ForeColor = System.Drawing.Color.White;
-            this.label92.Location = new System.Drawing.Point(17, 16);
-            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(57, 39);
-            this.label92.TabIndex = 8;
-            this.label92.Text = "Alt";
-            this.label92.Click += new System.EventHandler(this.gunaElipsePanel70_Click);
-            this.label92.MouseEnter += new System.EventHandler(this.gunaElipsePanel70_MouseEnter);
-            this.label92.MouseLeave += new System.EventHandler(this.gunaElipsePanel70_MouseLeave);
+            this.alt_l_btn.AutoSize = true;
+            this.alt_l_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.alt_l_btn.ForeColor = System.Drawing.Color.White;
+            this.alt_l_btn.Location = new System.Drawing.Point(17, 16);
+            this.alt_l_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.alt_l_btn.Name = "alt_l_btn";
+            this.alt_l_btn.Size = new System.Drawing.Size(57, 39);
+            this.alt_l_btn.TabIndex = 8;
+            this.alt_l_btn.Text = "Alt";
+            this.alt_l_btn.Click += new System.EventHandler(this.gunaElipsePanel70_Click);
+            this.alt_l_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel70_MouseEnter);
+            this.alt_l_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel70_MouseLeave);
             // 
             // gunaElipsePanel71
             // 
@@ -2884,7 +2880,7 @@
             this.gunaElipsePanel71.Radius = 5;
             this.gunaElipsePanel71.Size = new System.Drawing.Size(488, 72);
             this.gunaElipsePanel71.TabIndex = 133;
-            this.gunaElipsePanel71.Click += new System.EventHandler(this.gunaElipsePanel71_Click);
+            this.gunaElipsePanel71.Click += new System.EventHandler(this.space_Click);
             this.gunaElipsePanel71.MouseEnter += new System.EventHandler(this.gunaElipsePanel71_MouseEnter);
             this.gunaElipsePanel71.MouseLeave += new System.EventHandler(this.gunaElipsePanel71_MouseLeave);
             // 
@@ -2893,7 +2889,7 @@
             this.gunaElipsePanel72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel72.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel72.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel72.Controls.Add(this.label93);
+            this.gunaElipsePanel72.Controls.Add(this.alt_r_btn);
             this.gunaElipsePanel72.Location = new System.Drawing.Point(961, 485);
             this.gunaElipsePanel72.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel72.Name = "gunaElipsePanel72";
@@ -2904,27 +2900,27 @@
             this.gunaElipsePanel72.MouseEnter += new System.EventHandler(this.gunaElipsePanel72_MouseEnter);
             this.gunaElipsePanel72.MouseLeave += new System.EventHandler(this.gunaElipsePanel72_MouseLeave);
             // 
-            // label93
+            // alt_r_btn
             // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label93.ForeColor = System.Drawing.Color.White;
-            this.label93.Location = new System.Drawing.Point(17, 16);
-            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(57, 39);
-            this.label93.TabIndex = 8;
-            this.label93.Text = "Alt";
-            this.label93.Click += new System.EventHandler(this.gunaElipsePanel70_Click);
-            this.label93.MouseEnter += new System.EventHandler(this.gunaElipsePanel72_MouseEnter);
-            this.label93.MouseLeave += new System.EventHandler(this.gunaElipsePanel72_MouseLeave);
+            this.alt_r_btn.AutoSize = true;
+            this.alt_r_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.alt_r_btn.ForeColor = System.Drawing.Color.White;
+            this.alt_r_btn.Location = new System.Drawing.Point(17, 16);
+            this.alt_r_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.alt_r_btn.Name = "alt_r_btn";
+            this.alt_r_btn.Size = new System.Drawing.Size(57, 39);
+            this.alt_r_btn.TabIndex = 8;
+            this.alt_r_btn.Text = "Alt";
+            this.alt_r_btn.Click += new System.EventHandler(this.gunaElipsePanel70_Click);
+            this.alt_r_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel72_MouseEnter);
+            this.alt_r_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel72_MouseLeave);
             // 
             // gunaElipsePanel73
             // 
             this.gunaElipsePanel73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel73.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel73.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel73.Controls.Add(this.label94);
+            this.gunaElipsePanel73.Controls.Add(this.ctrl_r_btn);
             this.gunaElipsePanel73.Location = new System.Drawing.Point(1064, 485);
             this.gunaElipsePanel73.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel73.Name = "gunaElipsePanel73";
@@ -2935,27 +2931,27 @@
             this.gunaElipsePanel73.MouseEnter += new System.EventHandler(this.gunaElipsePanel73_MouseEnter);
             this.gunaElipsePanel73.MouseLeave += new System.EventHandler(this.gunaElipsePanel73_MouseLeave);
             // 
-            // label94
+            // ctrl_r_btn
             // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label94.ForeColor = System.Drawing.Color.White;
-            this.label94.Location = new System.Drawing.Point(13, 16);
-            this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(67, 39);
-            this.label94.TabIndex = 8;
-            this.label94.Text = "Ctrl";
-            this.label94.Click += new System.EventHandler(this.gunaElipsePanel67_Click);
-            this.label94.MouseEnter += new System.EventHandler(this.gunaElipsePanel73_MouseEnter);
-            this.label94.MouseLeave += new System.EventHandler(this.gunaElipsePanel73_MouseLeave);
+            this.ctrl_r_btn.AutoSize = true;
+            this.ctrl_r_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.ctrl_r_btn.ForeColor = System.Drawing.Color.White;
+            this.ctrl_r_btn.Location = new System.Drawing.Point(13, 16);
+            this.ctrl_r_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ctrl_r_btn.Name = "ctrl_r_btn";
+            this.ctrl_r_btn.Size = new System.Drawing.Size(67, 39);
+            this.ctrl_r_btn.TabIndex = 8;
+            this.ctrl_r_btn.Text = "Ctrl";
+            this.ctrl_r_btn.Click += new System.EventHandler(this.gunaElipsePanel67_Click);
+            this.ctrl_r_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel73_MouseEnter);
+            this.ctrl_r_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel73_MouseLeave);
             // 
             // gunaElipsePanel74
             // 
             this.gunaElipsePanel74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel74.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel74.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel74.Controls.Add(this.label95);
+            this.gunaElipsePanel74.Controls.Add(this.arrow_left);
             this.gunaElipsePanel74.Location = new System.Drawing.Point(1168, 485);
             this.gunaElipsePanel74.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel74.Name = "gunaElipsePanel74";
@@ -2966,26 +2962,26 @@
             this.gunaElipsePanel74.MouseEnter += new System.EventHandler(this.gunaElipsePanel74_MouseEnter);
             this.gunaElipsePanel74.MouseLeave += new System.EventHandler(this.gunaElipsePanel74_MouseLeave);
             // 
-            // label95
+            // arrow_left
             // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15F);
-            this.label95.ForeColor = System.Drawing.Color.White;
-            this.label95.Location = new System.Drawing.Point(35, 16);
-            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(0, 40);
-            this.label95.TabIndex = 10;
-            this.label95.Click += new System.EventHandler(this.label95_Click);
-            this.label95.MouseEnter += new System.EventHandler(this.gunaElipsePanel74_MouseEnter);
-            this.label95.MouseLeave += new System.EventHandler(this.gunaElipsePanel74_MouseLeave);
+            this.arrow_left.AutoSize = true;
+            this.arrow_left.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15F);
+            this.arrow_left.ForeColor = System.Drawing.Color.White;
+            this.arrow_left.Location = new System.Drawing.Point(35, 16);
+            this.arrow_left.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arrow_left.Name = "arrow_left";
+            this.arrow_left.Size = new System.Drawing.Size(0, 40);
+            this.arrow_left.TabIndex = 10;
+            this.arrow_left.Click += new System.EventHandler(this.label95_Click);
+            this.arrow_left.MouseEnter += new System.EventHandler(this.gunaElipsePanel74_MouseEnter);
+            this.arrow_left.MouseLeave += new System.EventHandler(this.gunaElipsePanel74_MouseLeave);
             // 
             // gunaElipsePanel75
             // 
             this.gunaElipsePanel75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel75.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel75.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel75.Controls.Add(this.label97);
+            this.gunaElipsePanel75.Controls.Add(this.arrow_up);
             this.gunaElipsePanel75.Location = new System.Drawing.Point(1300, 485);
             this.gunaElipsePanel75.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel75.Name = "gunaElipsePanel75";
@@ -2996,26 +2992,26 @@
             this.gunaElipsePanel75.MouseEnter += new System.EventHandler(this.gunaElipsePanel75_MouseEnter);
             this.gunaElipsePanel75.MouseLeave += new System.EventHandler(this.gunaElipsePanel75_MouseLeave);
             // 
-            // label97
+            // arrow_up
             // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Segoe MDL2 Assets", 6F);
-            this.label97.ForeColor = System.Drawing.Color.White;
-            this.label97.Location = new System.Drawing.Point(31, 8);
-            this.label97.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(0, 16);
-            this.label97.TabIndex = 11;
-            this.label97.Click += new System.EventHandler(this.label97_Click);
-            this.label97.MouseEnter += new System.EventHandler(this.gunaElipsePanel75_MouseEnter);
-            this.label97.MouseLeave += new System.EventHandler(this.gunaElipsePanel75_MouseLeave);
+            this.arrow_up.AutoSize = true;
+            this.arrow_up.Font = new System.Drawing.Font("Segoe MDL2 Assets", 6F);
+            this.arrow_up.ForeColor = System.Drawing.Color.White;
+            this.arrow_up.Location = new System.Drawing.Point(31, 8);
+            this.arrow_up.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arrow_up.Name = "arrow_up";
+            this.arrow_up.Size = new System.Drawing.Size(0, 16);
+            this.arrow_up.TabIndex = 11;
+            this.arrow_up.Click += new System.EventHandler(this.label97_Click);
+            this.arrow_up.MouseEnter += new System.EventHandler(this.gunaElipsePanel75_MouseEnter);
+            this.arrow_up.MouseLeave += new System.EventHandler(this.gunaElipsePanel75_MouseLeave);
             // 
             // gunaElipsePanel76
             // 
             this.gunaElipsePanel76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel76.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel76.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel76.Controls.Add(this.label98);
+            this.gunaElipsePanel76.Controls.Add(this.arrow_down);
             this.gunaElipsePanel76.Location = new System.Drawing.Point(1300, 525);
             this.gunaElipsePanel76.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel76.Name = "gunaElipsePanel76";
@@ -3026,26 +3022,26 @@
             this.gunaElipsePanel76.MouseEnter += new System.EventHandler(this.gunaElipsePanel76_MouseEnter);
             this.gunaElipsePanel76.MouseLeave += new System.EventHandler(this.gunaElipsePanel76_MouseLeave);
             // 
-            // label98
+            // arrow_down
             // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Segoe MDL2 Assets", 6F);
-            this.label98.ForeColor = System.Drawing.Color.White;
-            this.label98.Location = new System.Drawing.Point(31, 8);
-            this.label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(0, 16);
-            this.label98.TabIndex = 12;
-            this.label98.Click += new System.EventHandler(this.label98_Click);
-            this.label98.MouseEnter += new System.EventHandler(this.gunaElipsePanel76_MouseEnter);
-            this.label98.MouseLeave += new System.EventHandler(this.gunaElipsePanel76_MouseLeave);
+            this.arrow_down.AutoSize = true;
+            this.arrow_down.Font = new System.Drawing.Font("Segoe MDL2 Assets", 6F);
+            this.arrow_down.ForeColor = System.Drawing.Color.White;
+            this.arrow_down.Location = new System.Drawing.Point(31, 8);
+            this.arrow_down.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arrow_down.Name = "arrow_down";
+            this.arrow_down.Size = new System.Drawing.Size(0, 16);
+            this.arrow_down.TabIndex = 12;
+            this.arrow_down.Click += new System.EventHandler(this.label98_Click);
+            this.arrow_down.MouseEnter += new System.EventHandler(this.gunaElipsePanel76_MouseEnter);
+            this.arrow_down.MouseLeave += new System.EventHandler(this.gunaElipsePanel76_MouseLeave);
             // 
             // gunaElipsePanel77
             // 
             this.gunaElipsePanel77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel77.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel77.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel77.Controls.Add(this.label96);
+            this.gunaElipsePanel77.Controls.Add(this.arrow_r);
             this.gunaElipsePanel77.Location = new System.Drawing.Point(1396, 485);
             this.gunaElipsePanel77.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel77.Name = "gunaElipsePanel77";
@@ -3056,19 +3052,19 @@
             this.gunaElipsePanel77.MouseEnter += new System.EventHandler(this.gunaElipsePanel77_MouseEnter);
             this.gunaElipsePanel77.MouseLeave += new System.EventHandler(this.gunaElipsePanel77_MouseLeave);
             // 
-            // label96
+            // arrow_r
             // 
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15F);
-            this.label96.ForeColor = System.Drawing.Color.White;
-            this.label96.Location = new System.Drawing.Point(35, 16);
-            this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(0, 40);
-            this.label96.TabIndex = 10;
-            this.label96.Click += new System.EventHandler(this.label96_Click);
-            this.label96.MouseEnter += new System.EventHandler(this.gunaElipsePanel77_MouseEnter);
-            this.label96.MouseLeave += new System.EventHandler(this.gunaElipsePanel77_MouseLeave);
+            this.arrow_r.AutoSize = true;
+            this.arrow_r.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15F);
+            this.arrow_r.ForeColor = System.Drawing.Color.White;
+            this.arrow_r.Location = new System.Drawing.Point(35, 16);
+            this.arrow_r.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arrow_r.Name = "arrow_r";
+            this.arrow_r.Size = new System.Drawing.Size(0, 40);
+            this.arrow_r.TabIndex = 10;
+            this.arrow_r.Click += new System.EventHandler(this.label96_Click);
+            this.arrow_r.MouseEnter += new System.EventHandler(this.gunaElipsePanel77_MouseEnter);
+            this.arrow_r.MouseLeave += new System.EventHandler(this.gunaElipsePanel77_MouseLeave);
             // 
             // bunifuDragControl1
             // 
@@ -3109,7 +3105,7 @@
             this.gunaElipsePanel78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaElipsePanel78.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel78.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.gunaElipsePanel78.Controls.Add(this.label99);
+            this.gunaElipsePanel78.Controls.Add(this.del2_btn);
             this.gunaElipsePanel78.Location = new System.Drawing.Point(1368, 103);
             this.gunaElipsePanel78.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaElipsePanel78.Name = "gunaElipsePanel78";
@@ -3120,62 +3116,35 @@
             this.gunaElipsePanel78.MouseEnter += new System.EventHandler(this.gunaElipsePanel78_MouseEnter);
             this.gunaElipsePanel78.MouseLeave += new System.EventHandler(this.gunaElipsePanel78_MouseLeave);
             // 
-            // label99
+            // del2_btn
             // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
-            this.label99.ForeColor = System.Drawing.Color.White;
-            this.label99.Location = new System.Drawing.Point(40, 17);
-            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(110, 39);
-            this.label99.TabIndex = 8;
-            this.label99.Text = "Delete";
-            this.label99.Click += new System.EventHandler(this.gunaElipsePanel78_Click);
-            this.label99.MouseEnter += new System.EventHandler(this.gunaElipsePanel78_MouseEnter);
-            this.label99.MouseLeave += new System.EventHandler(this.gunaElipsePanel78_MouseLeave);
+            this.del2_btn.AutoSize = true;
+            this.del2_btn.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.del2_btn.ForeColor = System.Drawing.Color.White;
+            this.del2_btn.Location = new System.Drawing.Point(40, 17);
+            this.del2_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.del2_btn.Name = "del2_btn";
+            this.del2_btn.Size = new System.Drawing.Size(110, 39);
+            this.del2_btn.TabIndex = 8;
+            this.del2_btn.Text = "Delete";
+            this.del2_btn.Click += new System.EventHandler(this.gunaElipsePanel78_Click);
+            this.del2_btn.MouseEnter += new System.EventHandler(this.gunaElipsePanel78_MouseEnter);
+            this.del2_btn.MouseLeave += new System.EventHandler(this.gunaElipsePanel78_MouseLeave);
             // 
-            // caps_up
+            // icon
             // 
-            this.caps_up.Tick += new System.EventHandler(this.caps_up_Tick);
-            // 
-            // shift_
-            // 
-            this.shift_.Tick += new System.EventHandler(this.shift__Tick);
-            // 
-            // fn_
-            // 
-            this.fn_.Tick += new System.EventHandler(this.fn__Tick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe MDL2 Assets", 17F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(32, 56);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 46);
-            this.label3.TabIndex = 142;
-            this.label3.Text = "";
-            this.label3.Visible = false;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // bunifuImageButton5
-            // 
-            this.bunifuImageButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuImageButton5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton5.Image = global::keyboard_.Properties.Resources.near_ai9_01;
-            this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(732, 6);
-            this.bunifuImageButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(79, 60);
-            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton5.TabIndex = 140;
-            this.bunifuImageButton5.TabStop = false;
-            this.bunifuImageButton5.Zoom = 0;
+            this.icon.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.icon.BackColor = System.Drawing.Color.Transparent;
+            this.icon.Image = global::keyboard_.Properties.Resources.near_ai9_01;
+            this.icon.ImageActive = null;
+            this.icon.Location = new System.Drawing.Point(732, 6);
+            this.icon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(79, 60);
+            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.icon.TabIndex = 140;
+            this.icon.TabStop = false;
+            this.icon.Zoom = 0;
             // 
             // keyboard_form
             // 
@@ -3183,9 +3152,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1544, 583);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.gunaElipsePanel78);
-            this.Controls.Add(this.bunifuImageButton5);
+            this.Controls.Add(this.icon);
             this.Controls.Add(this.gunaElipsePanel77);
             this.Controls.Add(this.gunaElipsePanel76);
             this.Controls.Add(this.gunaElipsePanel75);
@@ -3236,18 +3204,18 @@
             this.Controls.Add(this.gunaElipsePanel30);
             this.Controls.Add(this.gunaElipsePanel29);
             this.Controls.Add(this.gunaElipsePanel28);
-            this.Controls.Add(this.gunaElipsePanel27);
-            this.Controls.Add(this.gunaElipsePanel26);
-            this.Controls.Add(this.gunaElipsePanel25);
-            this.Controls.Add(this.gunaElipsePanel24);
-            this.Controls.Add(this.gunaElipsePanel23);
-            this.Controls.Add(this.gunaElipsePanel22);
-            this.Controls.Add(this.gunaElipsePanel21);
-            this.Controls.Add(this.gunaElipsePanel20);
-            this.Controls.Add(this.gunaElipsePanel19);
-            this.Controls.Add(this.gunaElipsePanel18);
-            this.Controls.Add(this.gunaElipsePanel17);
-            this.Controls.Add(this.gunaElipsePanel16);
+            this.Controls.Add(this._f12_p);
+            this.Controls.Add(this._f11_p);
+            this.Controls.Add(this._f10_p);
+            this.Controls.Add(this._f9_p);
+            this.Controls.Add(this._f8_p);
+            this.Controls.Add(this._f7_p);
+            this.Controls.Add(this._f6_p);
+            this.Controls.Add(this._f5_p);
+            this.Controls.Add(this._f4_p);
+            this.Controls.Add(this._f3_p);
+            this.Controls.Add(this._f2_p);
+            this.Controls.Add(this._f1_p);
             this.Controls.Add(this.gunaElipsePanel15);
             this.Controls.Add(this.gunaElipsePanel14);
             this.Controls.Add(this.gunaElipsePanel13);
@@ -3263,7 +3231,7 @@
             this.Controls.Add(this.gunaElipsePanel2);
             this.Controls.Add(this.gunaElipsePanel1);
             this.Controls.Add(this.gunaElipsePanel9);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gunaLinePanel1);
@@ -3274,12 +3242,11 @@
             this.Name = "keyboard_form";
             this.Opacity = 0D;
             this.Text = "Keyboard";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyboard_form_KeyDown);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.min_win)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_win)).EndInit();
             this.gunaElipsePanel9.ResumeLayout(false);
             this.gunaElipsePanel9.PerformLayout();
             this.gunaElipsePanel1.ResumeLayout(false);
@@ -3310,30 +3277,30 @@
             this.gunaElipsePanel14.PerformLayout();
             this.gunaElipsePanel15.ResumeLayout(false);
             this.gunaElipsePanel15.PerformLayout();
-            this.gunaElipsePanel16.ResumeLayout(false);
-            this.gunaElipsePanel16.PerformLayout();
-            this.gunaElipsePanel17.ResumeLayout(false);
-            this.gunaElipsePanel17.PerformLayout();
-            this.gunaElipsePanel18.ResumeLayout(false);
-            this.gunaElipsePanel18.PerformLayout();
-            this.gunaElipsePanel19.ResumeLayout(false);
-            this.gunaElipsePanel19.PerformLayout();
-            this.gunaElipsePanel20.ResumeLayout(false);
-            this.gunaElipsePanel20.PerformLayout();
-            this.gunaElipsePanel21.ResumeLayout(false);
-            this.gunaElipsePanel21.PerformLayout();
-            this.gunaElipsePanel22.ResumeLayout(false);
-            this.gunaElipsePanel22.PerformLayout();
-            this.gunaElipsePanel23.ResumeLayout(false);
-            this.gunaElipsePanel23.PerformLayout();
-            this.gunaElipsePanel24.ResumeLayout(false);
-            this.gunaElipsePanel24.PerformLayout();
-            this.gunaElipsePanel25.ResumeLayout(false);
-            this.gunaElipsePanel25.PerformLayout();
-            this.gunaElipsePanel26.ResumeLayout(false);
-            this.gunaElipsePanel26.PerformLayout();
-            this.gunaElipsePanel27.ResumeLayout(false);
-            this.gunaElipsePanel27.PerformLayout();
+            this._f1_p.ResumeLayout(false);
+            this._f1_p.PerformLayout();
+            this._f2_p.ResumeLayout(false);
+            this._f2_p.PerformLayout();
+            this._f3_p.ResumeLayout(false);
+            this._f3_p.PerformLayout();
+            this._f4_p.ResumeLayout(false);
+            this._f4_p.PerformLayout();
+            this._f5_p.ResumeLayout(false);
+            this._f5_p.PerformLayout();
+            this._f6_p.ResumeLayout(false);
+            this._f6_p.PerformLayout();
+            this._f7_p.ResumeLayout(false);
+            this._f7_p.PerformLayout();
+            this._f8_p.ResumeLayout(false);
+            this._f8_p.PerformLayout();
+            this._f9_p.ResumeLayout(false);
+            this._f9_p.PerformLayout();
+            this._f10_p.ResumeLayout(false);
+            this._f10_p.PerformLayout();
+            this._f11_p.ResumeLayout(false);
+            this._f11_p.PerformLayout();
+            this._f12_p.ResumeLayout(false);
+            this._f12_p.PerformLayout();
             this.gunaElipsePanel28.ResumeLayout(false);
             this.gunaElipsePanel28.PerformLayout();
             this.gunaElipsePanel29.ResumeLayout(false);
@@ -3434,7 +3401,7 @@
             this.gunaElipsePanel77.PerformLayout();
             this.gunaElipsePanel78.ResumeLayout(false);
             this.gunaElipsePanel78.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3443,17 +3410,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton min_win;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuImageButton close_win;
+        private System.Windows.Forms.Label title;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel9;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private System.Windows.Forms.Label _add_;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label btn_eq;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
         private System.Windows.Forms.Label _min_;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label min_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
         private System.Windows.Forms.Label _cb_;
         private System.Windows.Forms.Label __0__;
@@ -3488,33 +3455,33 @@
         private System.Windows.Forms.Label _wav_;
         private System.Windows.Forms.Label _co_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel15;
-        private System.Windows.Forms.Label label30;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel16;
+        private System.Windows.Forms.Label esc_btn;
+        private Guna.UI.WinForms.GunaElipsePanel _f1_p;
         private System.Windows.Forms.Label _f1_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel17;
+        private Guna.UI.WinForms.GunaElipsePanel _f2_p;
         private System.Windows.Forms.Label _f2_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel18;
+        private Guna.UI.WinForms.GunaElipsePanel _f3_p;
         private System.Windows.Forms.Label _f3_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel19;
+        private Guna.UI.WinForms.GunaElipsePanel _f4_p;
         private System.Windows.Forms.Label _f4_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel20;
+        private Guna.UI.WinForms.GunaElipsePanel _f5_p;
         private System.Windows.Forms.Label _f5_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel21;
+        private Guna.UI.WinForms.GunaElipsePanel _f6_p;
         private System.Windows.Forms.Label _f6_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel22;
+        private Guna.UI.WinForms.GunaElipsePanel _f7_p;
         private System.Windows.Forms.Label _f7_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel23;
+        private Guna.UI.WinForms.GunaElipsePanel _f8_p;
         private System.Windows.Forms.Label _f8_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel24;
+        private Guna.UI.WinForms.GunaElipsePanel _f9_p;
         private System.Windows.Forms.Label _f9_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel25;
+        private Guna.UI.WinForms.GunaElipsePanel _f10_p;
         private System.Windows.Forms.Label _f10_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel26;
+        private Guna.UI.WinForms.GunaElipsePanel _f11_p;
         private System.Windows.Forms.Label _f11_;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel27;
+        private Guna.UI.WinForms.GunaElipsePanel _f12_p;
         private System.Windows.Forms.Label _f12_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel28;
-        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label tab_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel29;
         private System.Windows.Forms.Label q_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel30;
@@ -3545,7 +3512,7 @@
         private System.Windows.Forms.Label _or_;
         private System.Windows.Forms.Label _bs_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel42;
-        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label capslk_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel43;
         private System.Windows.Forms.Label a_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel44;
@@ -3571,9 +3538,8 @@
         private System.Windows.Forms.Label _str_;
         private System.Windows.Forms.Label _oc_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel54;
-        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label enter_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel55;
-        private System.Windows.Forms.Label label73;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel56;
         private System.Windows.Forms.Label z_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel57;
@@ -3598,40 +3564,37 @@
         private System.Windows.Forms.Label _qs_;
         private System.Windows.Forms.Label _s_;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel66;
-        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label shift_r_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel67;
-        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label ctrl_l_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel68;
-        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label fn_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel69;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel70;
-        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label alt_l_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel71;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel72;
-        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label alt_r_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel73;
-        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label ctrl_r_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel74;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel75;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel76;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel77;
-        private System.Windows.Forms.Label label91;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label start_btn;
+        private Bunifu.Framework.UI.BunifuImageButton icon;
+        private System.Windows.Forms.Label arrow_left;
+        private System.Windows.Forms.Label arrow_up;
+        private System.Windows.Forms.Label arrow_down;
+        private System.Windows.Forms.Label arrow_r;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer a_h;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label del_btn;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel78;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Timer caps_up;
-        private System.Windows.Forms.Timer shift_;
-        private System.Windows.Forms.Timer fn_;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label del2_btn;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
+        private System.Windows.Forms.Label shift_l_btn;
     }
 }
 
