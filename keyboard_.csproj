@@ -88,6 +88,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="btn_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btn_3.Designer.cs">
+      <DependentUpon>btn_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btn_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btn_2.Designer.cs">
+      <DependentUpon>btn_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btn_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btn_1.Designer.cs">
+      <DependentUpon>btn_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="keyboard_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +114,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="btn_3.resx">
+      <DependentUpon>btn_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btn_2.resx">
+      <DependentUpon>btn_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btn_1.resx">
+      <DependentUpon>btn_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="keyboard_form.resx">
       <DependentUpon>keyboard_form.cs</DependentUpon>
     </EmbeddedResource>

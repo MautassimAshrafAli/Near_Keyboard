@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Runtime.InteropServices;
 
 namespace keyboard_
 {
@@ -31,10 +32,10 @@ namespace keyboard_
         {
             InitializeComponent();
 
-            arrow_left.Text = char.ConvertFromUtf32(0xE016);
-            arrow_r.Text = char.ConvertFromUtf32(0xE017);
-            arrow_up.Text = char.ConvertFromUtf32(0xE018);
-            arrow_down.Text = char.ConvertFromUtf32(0xE011);
+            arrow_l_btn.name_btn_ = char.ConvertFromUtf32(0xE016);
+            arrow_r_btn.name_btn_ = char.ConvertFromUtf32(0xE017);
+            arrow_up_btn.name_btn_ = char.ConvertFromUtf32(0xE018);
+            arrow_down_btn.name_btn_ = char.ConvertFromUtf32(0xE011);
 
             this.CenterToScreen();
 
@@ -51,23 +52,16 @@ namespace keyboard_
             {
                 if (this.InvokeRequired)
                 {
-
                     timer4.Stop();
-
                 }
 
                 if (this.Opacity < 1)
                 {
-
                     this.Opacity += .1;
                 }
                 else
                 {
-                    Application.OpenForms[this.Name].Focus();
-
                     timer4.Stop();
-
-
                 }
             }
             catch (Exception)
@@ -100,736 +94,42 @@ namespace keyboard_
 
         private void close_win_Click(object sender, EventArgs e)
         {
+            keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
             this.Close();
         }
 
         private void min_win_Click(object sender, EventArgs e)
         {
-            if(WindowState == FormWindowState.Normal)
-            {this.WindowState = FormWindowState.Minimized;}
+            if (WindowState == FormWindowState.Normal)
+            { this.WindowState = FormWindowState.Minimized; }
         }
 
-        #region mouse_leave_enter
+        #region invoke key
 
-        private void gunaElipsePanel1_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel1.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel1_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel1.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel2_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel2.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel2_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel2.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel3_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel3.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel3_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel3.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel4_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel4.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel4_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel4.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel5_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel5.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel5_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel5.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel6_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel6.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel6_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel6.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel7_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel7.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel7_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel7.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel8_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel8.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel8_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel8.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel9_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel9.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel9_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel9.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel10_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel10.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel10_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel10.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel11_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel11.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel11_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel11.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel12_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel12.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel12_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel12.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel13_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel13.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel13_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel13.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel14_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel14.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel14_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel14.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel15_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel15.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel15_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel15.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel16_MouseEnter(object sender, EventArgs e)
-        {
-            _f1_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel16_MouseLeave(object sender, EventArgs e)
-        {
-            _f1_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel17_MouseEnter(object sender, EventArgs e)
-        {
-            _f2_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel17_MouseLeave(object sender, EventArgs e)
-        {
-            _f2_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel18_MouseEnter(object sender, EventArgs e)
-        {
-            _f3_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel18_MouseLeave(object sender, EventArgs e)
-        {
-            _f3_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel19_MouseEnter(object sender, EventArgs e)
-        {
-            _f4_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel19_MouseLeave(object sender, EventArgs e)
-        {
-            _f4_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel20_MouseEnter(object sender, EventArgs e)
-        {
-            _f5_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel20_MouseLeave(object sender, EventArgs e)
-        {
-            _f5_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel21_MouseEnter(object sender, EventArgs e)
-        {
-            _f6_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel21_MouseLeave(object sender, EventArgs e)
-        {
-            _f6_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel22_MouseEnter(object sender, EventArgs e)
-        {
-            _f7_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel22_MouseLeave(object sender, EventArgs e)
-        {
-            _f7_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel23_MouseEnter(object sender, EventArgs e)
-        {
-            _f8_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel23_MouseLeave(object sender, EventArgs e)
-        {
-            _f8_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel24_MouseEnter(object sender, EventArgs e)
-        {
-            _f9_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel24_MouseLeave(object sender, EventArgs e)
-        {
-            _f9_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel25_MouseEnter(object sender, EventArgs e)
-        {
-            _f10_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel25_MouseLeave(object sender, EventArgs e)
-        {
-            _f10_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel26_MouseEnter(object sender, EventArgs e)
-        {
-            _f11_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel26_MouseLeave(object sender, EventArgs e)
-        {
-            _f11_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel27_MouseEnter(object sender, EventArgs e)
-        {
-            _f12_p.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel27_MouseLeave(object sender, EventArgs e)
-        {
-            _f12_p.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel28_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel28.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel28_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel28.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel29_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel29.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel29_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel29.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel30_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel30.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel30_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel30.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel31_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel31.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel31_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel31.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel32_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel32.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel32_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel32.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel33_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel33.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel33_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel33.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel34_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel34.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel34_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel34.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel35_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel35.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel35_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel35.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel36_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel36.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel36_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel36.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel37_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel37.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel37_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel37.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel38_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel38.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel38_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel38.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel39_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel39.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel39_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel39.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel40_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel40.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel40_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel40.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel41_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel41.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel41_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel41.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel42_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel42.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel42_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel42.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel43_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel43.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel43_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel43.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel44_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel44.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel44_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel44.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel45_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel45.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel45_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel45.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel46_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel46.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel46_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel46.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel47_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel47.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel47_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel47.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel48_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel48.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel48_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel48.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel49_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel49.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel49_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel49.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel50_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel50.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel50_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel50.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel51_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel51.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel51_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel51.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel52_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel52.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel52_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel52.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel53_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel53.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel53_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel53.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel54_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel54.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel54_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel54.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel55_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel55.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel55_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel55.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel56_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel56.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel56_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel56.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel57_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel57.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel57_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel57.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel58_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel58.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel58_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel58.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel59_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel59.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel59_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel59.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel60_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel60.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel60_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel60.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel61_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel61.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel61_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel61.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel62_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel62.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel62_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel62.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-
-        private void gunaElipsePanel63_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel63.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel63_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel63.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel64_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel64.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel64_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel64.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel65_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel65.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel65_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel65.BaseColor = Color.FromArgb(49, 49, 49);
-        }
-        private void gunaElipsePanel66_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel66.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel66_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel66.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel67_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel67.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel67_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel67.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel68_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel68.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel68_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel68.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel69_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel69.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel69_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel69.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel70_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel70.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-
-        private void gunaElipsePanel70_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel70.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel71_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel71.BaseColor = Color.FromArgb(41, 41, 41);
-        }
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
 
-        private void gunaElipsePanel71_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel71.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-
-        private void gunaElipsePanel72_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel72.BaseColor = Color.FromArgb(41, 41, 41);
-        }
+        private const int KEYEVENTF_KEYDOWN = 0;
+        private const int KEYEVENTF_EXTENDEDKEY = 1;
+        private const int KEYEVENTF_KEYUP = 2;
 
-        private void gunaElipsePanel72_MouseLeave(object sender, EventArgs e)
+        public static void KeyDown_(Keys vKey)
         {
-            gunaElipsePanel72.BaseColor = Color.FromArgb(75, 75, 75);
+            keybd_event((byte)vKey, 0, KEYEVENTF_EXTENDEDKEY, 0);
         }
 
-        private void gunaElipsePanel73_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel73.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel73_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel73.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel74_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel74.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel74_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel74.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel75_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel75.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel75_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel75.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel76_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel76.BaseColor = Color.FromArgb(41, 41, 41);
-        }
-        private void gunaElipsePanel76_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel76.BaseColor = Color.FromArgb(75, 75, 75);
-        }
-        private void gunaElipsePanel77_MouseEnter(object sender, EventArgs e)
+        public static void KeyUp_(Keys vKey)
         {
-            gunaElipsePanel77.BaseColor = Color.FromArgb(41, 41, 41);
+            keybd_event((byte)vKey, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
         }
 
-        private void gunaElipsePanel77_MouseLeave(object sender, EventArgs e)
+        private static void PressKey(byte keyCode)
         {
-            gunaElipsePanel77.BaseColor = Color.FromArgb(75, 75, 75);
+            keybd_event(keyCode, 0x45, KEYEVENTF_EXTENDEDKEY, 0);
+            keybd_event(keyCode, 0x45, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
         }
-        private void gunaElipsePanel78_MouseEnter(object sender, EventArgs e)
-        {
-            gunaElipsePanel78.BaseColor = Color.FromArgb(41, 41, 41);
-        }
 
-        private void gunaElipsePanel78_MouseLeave(object sender, EventArgs e)
-        {
-            gunaElipsePanel78.BaseColor = Color.FromArgb(75, 75, 75);
-        }
 
         #endregion
 
@@ -837,1219 +137,679 @@ namespace keyboard_
 
         int caps = 0;
 
-        private void label59_Click(object sender, EventArgs e)
+        private void caps_Click(object sender, EventArgs e)
         {
-
-            caps_up_Tick_task();
 
             caps += 1;
 
+            caps_up_Tick_task();
         }
+        private void caps_up()
+        {
+            if (caps == 1)
+            {
 
+                q_.name_btn_ = "Q";
+                w_.name_btn_ = "W";
+                e_.name_btn_ = "E";
+                r_.name_btn_ = "R";
+                t_.name_btn_ = "T";
+                y_.name_btn_ = "Y";
+                u_.name_btn_ = "U";
+                i_.name_btn_ = "I";
+                o_.name_btn_ = "O";
+                p_.name_btn_ = "P";
+                a_.name_btn_ = "A";
+                s_.name_btn_ = "S";
+                d_.name_btn_ = "D";
+                f_.name_btn_ = "F";
+                g_.name_btn_ = "G";
+                h_.name_btn_ = "H";
+                j_.name_btn_ = "J";
+                k_.name_btn_ = "K";
+                l_.name_btn_ = "L";
+                z_.name_btn_ = "Z";
+                x_.name_btn_ = "X";
+                c_.name_btn_ = "C";
+                v_.name_btn_ = "V";
+                b_.name_btn_ = "B";
+                n_.name_btn_ = "N";
+                m_.name_btn_ = "M";
+
+            }
+            else if (caps == 2)
+            {
+
+                q_.name_btn_ = "q";
+                w_.name_btn_ = "w";
+                e_.name_btn_ = "e";
+                r_.name_btn_ = "r";
+                t_.name_btn_ = "t";
+                y_.name_btn_ = "y";
+                u_.name_btn_ = "u";
+                i_.name_btn_ = "i";
+                o_.name_btn_ = "o";
+                p_.name_btn_ = "p";
+                a_.name_btn_ = "a";
+                s_.name_btn_ = "s";
+                d_.name_btn_ = "d";
+                f_.name_btn_ = "f";
+                g_.name_btn_ = "g";
+                h_.name_btn_ = "h";
+                j_.name_btn_ = "j";
+                k_.name_btn_ = "k";
+                l_.name_btn_ = "l";
+                z_.name_btn_ = "z";
+                x_.name_btn_ = "x";
+                c_.name_btn_ = "c";
+                v_.name_btn_ = "v";
+                b_.name_btn_ = "b";
+                n_.name_btn_ = "n";
+                m_.name_btn_ = "m";
+
+
+                caps = 0;
+
+            }
+        }
         private void caps_up_Tick_task()
         {
-            Task.Factory.StartNew(() =>
-            {
-                while (true)
-                {
-                    if (caps == 1)
-                    {
+            caps_up();
 
-                        q_.Text = "Q";
-                        w_.Text = "W";
-                        e_.Text = "E";
-                        r_.Text = "R";
-                        t_.Text = "T";
-                        y_.Text = "Y";
-                        u_.Text = "U";
-                        i_.Text = "I";
-                        o_.Text = "O";
-                        p_.Text = "P";
-                        a_.Text = "A";
-                        s_.Text = "S";
-                        d_.Text = "D";
-                        f_.Text = "F";
-                        g_.Text = "G";
-                        h_.Text = "H";
-                        j_.Text = "J";
-                        k_.Text = "K";
-                        l_.Text = "L";
-                        z_.Text = "Z";
-                        x_.Text = "X";
-                        c_.Text = "C";
-                        v_.Text = "V";
-                        b_.Text = "B";
-                        n_.Text = "N";
-                        m_.Text = "M";
-
-
-                    }
-                    else if (caps == 2)
-                    {
-
-                        q_.Text = "q";
-                        w_.Text = "w";
-                        e_.Text = "e";
-                        r_.Text = "r";
-                        t_.Text = "t";
-                        y_.Text = "y";
-                        u_.Text = "u";
-                        i_.Text = "i";
-                        o_.Text = "o";
-                        p_.Text = "p";
-                        a_.Text = "a";
-                        s_.Text = "s";
-                        d_.Text = "d";
-                        f_.Text = "f";
-                        g_.Text = "g";
-                        h_.Text = "h";
-                        j_.Text = "j";
-                        k_.Text = "k";
-                        l_.Text = "l";
-                        z_.Text = "z";
-                        x_.Text = "x";
-                        c_.Text = "c";
-                        v_.Text = "v";
-                        b_.Text = "b";
-                        n_.Text = "n";
-                        m_.Text = "m";
-
-
-                        caps = 0;
-
-                    }
-                }
-            });
+            KeyDown_(Keys.CapsLock);
+            KeyUp_(Keys.CapsLock);
 
         }
 
-        private void label44_Click(object sender, EventArgs e)
+        private void q_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.Q);
+            KeyUp_(Keys.Q);
+        }
+
+        private void w_Click(object sender, EventArgs e)
         {
 
-            if (caps == 1)
-            {
-
-                SendKeys.Send("Q");
-
-            }
-            else {
-
-                SendKeys.Send("q");
-              
-            }
-
-            
+            KeyDown_(Keys.W);
+            KeyUp_(Keys.W);
 
         }
 
-        private void label43_Click(object sender, EventArgs e)
+        private void e_Click(object sender, EventArgs e)
         {
-
-            if (caps == 1)
-            {
-
-                SendKeys.Send("W");
-
-            }
-            else
-            {
-
-                SendKeys.Send("w");
-
-            }
-
+            KeyDown_(Keys.E);
+            KeyUp_(Keys.E);
         }
 
-        private void e__Click(object sender, EventArgs e)
+        private void r_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("E");
-
-            }
-            else
-            {
-
-                SendKeys.Send("e");
-
-            }
+            KeyDown_(Keys.E);
+            KeyUp_(Keys.E);
         }
 
-        private void r__Click(object sender, EventArgs e)
+        private void t_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("R");
-
-            }
-            else
-            {
-
-                SendKeys.Send("r");
-
-            }
+            KeyDown_(Keys.T);
+            KeyUp_(Keys.T);
         }
 
-        private void t__Click(object sender, EventArgs e)
+        private void y_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("T");
-
-            }
-            else
-            {
-
-                SendKeys.Send("t");
-
-            }
+            KeyDown_(Keys.Y);
+            KeyUp_(Keys.Y);
         }
 
-        private void y__Click(object sender, EventArgs e)
+        private void u_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("Y");
-
-            }
-            else
-            {
-
-                SendKeys.Send("y");
-
-            }
+            KeyDown_(Keys.U);
+            KeyUp_(Keys.U);
         }
 
-        private void u__Click(object sender, EventArgs e)
+        private void i_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("U");
-
-            }
-            else
-            {
-
-                SendKeys.Send("u");
-
-            }
+            KeyDown_(Keys.U);
+            KeyUp_(Keys.U);
         }
 
-        private void i__Click(object sender, EventArgs e)
+        private void o_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("I");
-
-            }
-            else
-            {
-
-                SendKeys.Send("i");
-
-            }
+            KeyDown_(Keys.U);
+            KeyUp_(Keys.U);
         }
 
-        private void o__Click(object sender, EventArgs e)
+        private void p_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("O");
-
-            }
-            else
-            {
-
-                SendKeys.Send("o");
-
-            }
+            KeyDown_(Keys.U);
+            KeyUp_(Keys.U);
         }
 
-        private void p__Click(object sender, EventArgs e)
+        private void a_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("P");
-
-            }
-            else
-            {
-
-                SendKeys.Send("p");
-
-            }
+            KeyDown_(Keys.A);
+            KeyUp_(Keys.A);
         }
 
-        private void a__Click(object sender, EventArgs e)
+        private void s_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("A");
-
-            }
-            else
-            {
-
-                SendKeys.Send("a");
-
-            }
+            KeyDown_(Keys.S);
+            KeyUp_(Keys.S);
         }
 
-        private void s__Click(object sender, EventArgs e)
+        private void d_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("S");
-
-            }
-            else
-            {
-
-                SendKeys.Send("s");
-
-            }
+            KeyDown_(Keys.D);
+            KeyUp_(Keys.D);
         }
 
-        private void d__Click(object sender, EventArgs e)
+        private void f_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("D");
-
-            }
-            else
-            {
-
-                SendKeys.Send("d");
-
-            }
+            KeyDown_(Keys.F);
+            KeyUp_(Keys.F);
         }
 
-        private void f__Click(object sender, EventArgs e)
+        private void g_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("F");
-
-            }
-            else
-            {
-
-                SendKeys.Send("f");
-
-            }
+            KeyDown_(Keys.G);
+            KeyUp_(Keys.G);
         }
 
-        private void g__Click(object sender, EventArgs e)
+        private void h_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("G");
-
-            }
-            else
-            {
-
-                SendKeys.Send("g");
-
-            }
+            KeyDown_(Keys.H);
+            KeyUp_(Keys.H);
         }
 
-        private void h__Click(object sender, EventArgs e)
+        private void j_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("H");
-
-            }
-            else
-            {
-
-                SendKeys.Send("h");
-
-            }
+            KeyDown_(Keys.J);
+            KeyUp_(Keys.J);
         }
 
-        private void j__Click(object sender, EventArgs e)
+        private void k_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("J");
-
-            }
-            else
-            {
-
-                SendKeys.Send("j");
-
-            }
+            KeyDown_(Keys.K);
+            KeyUp_(Keys.K);
         }
 
-        private void k__Click(object sender, EventArgs e)
+        private void l_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("K");
-
-            }
-            else
-            {
-
-                SendKeys.Send("k");
-
-            }
+            KeyDown_(Keys.L);
+            KeyUp_(Keys.L);
         }
 
-        private void l__Click(object sender, EventArgs e)
+        private void z_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("L");
-
-            }
-            else
-            {
-
-                SendKeys.Send("l");
-
-            }
+            KeyDown_(Keys.L);
+            KeyUp_(Keys.L);
         }
 
-        private void z__Click(object sender, EventArgs e)
+        private void x_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("Z");
-
-            }
-            else
-            {
-
-                SendKeys.Send("z");
-
-            }
+            KeyDown_(Keys.X);
+            KeyUp_(Keys.X);
         }
 
-        private void x__Click(object sender, EventArgs e)
+        private void c_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("X");
-
-            }
-            else
-            {
-
-                SendKeys.Send("x");
-
-            }
+            KeyDown_(Keys.C);
+            KeyUp_(Keys.C);
         }
 
-        private void c__Click(object sender, EventArgs e)
+        private void v_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("C");
-
-            }
-            else
-            {
-
-                SendKeys.Send("c");
-
-            }
+            KeyDown_(Keys.V);
+            KeyUp_(Keys.V);
         }
 
-        private void v__Click(object sender, EventArgs e)
+        private void b_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("V");
-
-            }
-            else
-            {
-
-                SendKeys.Send("v");
-
-            }
+            KeyDown_(Keys.B);
+            KeyUp_(Keys.B);
         }
 
-        private void b__Click(object sender, EventArgs e)
+        private void n_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("B");
-
-            }
-            else
-            {
-
-                SendKeys.Send("b");
-
-            }
+            KeyDown_(Keys.N);
+            KeyUp_(Keys.N);
         }
 
-        private void n__Click(object sender, EventArgs e)
+        private void m_Click(object sender, EventArgs e)
         {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("N");
-
-            }
-            else
-            {
-
-                SendKeys.Send("n");
-
-            }
+            KeyDown_(Keys.M);
+            KeyUp_(Keys.M);
         }
-
-        private void m__Click(object sender, EventArgs e)
-        {
-            if (caps == 1)
-            {
-
-                SendKeys.Send("M");
-
-            }
-            else
-            {
-
-                SendKeys.Send("m");
-
-            }
-        }
-
-
 
 
         #endregion
 
         #region 1_@
 
+        private const int VK_SHIFT = 0x10;
+
         int sh = 0;
-        private void label73_Click(object sender, EventArgs e)
-        {
-            shift__Tick_task();
-
+        private void shift_Click(object sender, EventArgs e)
+        { 
             sh += 1;
-
+            caps += 1;
+            shift__Tick_task();
+            caps_up();
+            
         }
         private void shift__Tick_task()
         {
-            Task.Factory.StartNew(() =>
-            {
-                while (true)
-                {
-                    Thread.Sleep(100);
-
-                    if (sh == 1)
-                    {
-
-                        _info_.ForeColor = Color.White;
-                        _at_.ForeColor = Color.White;
-                        _hash_.ForeColor = Color.White;
-                        _do_.ForeColor = Color.White;
-                        _mo_.ForeColor = Color.White;
-                        _up_.ForeColor = Color.White;
-                        _and_.ForeColor = Color.White;
-                        _as_.ForeColor = Color.White;
-                        _ob_.ForeColor = Color.White;
-                        _cb_.ForeColor = Color.White;
-                        _min_.ForeColor = Color.White;
-                        _add_.ForeColor = Color.White;
-                        _wav_.ForeColor = Color.White;
-                        _op_.ForeColor = Color.White;
-                        _cp_.ForeColor = Color.White;
-                        _or_.ForeColor = Color.White;
-                        _scop_.ForeColor = Color.White;
-                        _str_.ForeColor = Color.White;
-                        _smal_.ForeColor = Color.White;
-                        _large_.ForeColor = Color.White;
-                        _qs_.ForeColor = Color.White;
-
-                        _1_.ForeColor = Color.Silver;
-                        _2_.ForeColor = Color.Silver;
-                        _3_.ForeColor = Color.Silver;
-                        _4_.ForeColor = Color.Silver;
-                        _5_.ForeColor = Color.Silver;
-                        _6_.ForeColor = Color.Silver;
-                        _7_.ForeColor = Color.Silver;
-                        _8_.ForeColor = Color.Silver;
-                        _9_.ForeColor = Color.Silver;
-                        __0__.ForeColor = Color.Silver;
-
-                        _p1_.ForeColor = Color.Silver;
-                        _p2_.ForeColor = Color.Silver;
-                        _bs_.ForeColor = Color.Silver;
-                        _sime_.ForeColor = Color.Silver;
-                        _oc_.ForeColor = Color.Silver;
-                        _pa_.ForeColor = Color.Silver;
-                        _po_.ForeColor = Color.Silver;
-                        _s_.ForeColor = Color.Silver;
-                        _co_.ForeColor = Color.Silver;
-
-
-
-                    }
-                    else if (sh == 2)
-                    {
-
-                        _info_.ForeColor = Color.Silver;
-                        _at_.ForeColor = Color.Silver;
-                        _hash_.ForeColor = Color.Silver;
-                        _do_.ForeColor = Color.Silver;
-                        _mo_.ForeColor = Color.Silver;
-                        _up_.ForeColor = Color.Silver;
-                        _and_.ForeColor = Color.Silver;
-                        _as_.ForeColor = Color.Silver;
-                        _ob_.ForeColor = Color.Silver;
-                        _cb_.ForeColor = Color.Silver;
-                        _min_.ForeColor = Color.Silver;
-                        _add_.ForeColor = Color.Silver;
-                        _wav_.ForeColor = Color.Silver;
-                        _op_.ForeColor = Color.Silver;
-                        _cp_.ForeColor = Color.Silver;
-                        _or_.ForeColor = Color.Silver;
-                        _scop_.ForeColor = Color.Silver;
-                        _str_.ForeColor = Color.Silver;
-                        _smal_.ForeColor = Color.Silver;
-                        _large_.ForeColor = Color.Silver;
-                        _qs_.ForeColor = Color.Silver;
-
-                        _1_.ForeColor = Color.White;
-                        _2_.ForeColor = Color.White;
-                        _3_.ForeColor = Color.White;
-                        _4_.ForeColor = Color.White;
-                        _5_.ForeColor = Color.White;
-                        _6_.ForeColor = Color.White;
-                        _7_.ForeColor = Color.White;
-                        _8_.ForeColor = Color.White;
-                        _9_.ForeColor = Color.White;
-                        __0__.ForeColor = Color.White;
-
-                        _p1_.ForeColor = Color.White;
-                        _p2_.ForeColor = Color.White;
-                        _bs_.ForeColor = Color.White;
-                        _sime_.ForeColor = Color.White;
-                        _oc_.ForeColor = Color.White;
-                        _pa_.ForeColor = Color.White;
-                        _po_.ForeColor = Color.White;
-                        _s_.ForeColor = Color.White;
-                        _co_.ForeColor = Color.White;
-
-
-                        sh = 0;
-
-                    }
-                }
-            });
-
-        }
-        private void _1__Click(object sender, EventArgs e)
-        {
             if (sh == 1)
             {
 
-               
-                SendKeys.Send("!");
+                s1_.name2_btn_color = Color.White;
+                s2_.name2_btn_color = Color.White;
+                s3_.name2_btn_color = Color.White;
+                s4_.name2_btn_color = Color.White;
+                s5_.name2_btn_color = Color.White;
+                s6_.name2_btn_color = Color.White;
+                s7_.name2_btn_color = Color.White;
+                s8_.name2_btn_color = Color.White;
+                s9_.name2_btn_color = Color.White;
+                s10_.name2_btn_color = Color.White;
+                s11_.name2_btn_color = Color.White;
+                s12_.name2_btn_color = Color.White;
+                s13_.name2_btn_color = Color.White;
+                s14_.name2_btn_color = Color.White;
+                s15_.name2_btn_color = Color.White;
+                s16_.name2_btn_color = Color.White;
+                s17_.name2_btn_color = Color.White;
+                s18_.name2_btn_color = Color.White;
+                s19_.name2_btn_color = Color.White;
+                s20_.name2_btn_color = Color.White;
+                s21_.name2_btn_color = Color.White;
 
-            }
-            else
-            {
-
-                SendKeys.Send("1");
-
-            }
-        }
-
-        private void gunaElipsePanel12_Click(object sender, EventArgs e)
-        {
-
-            if (sh == 1)
-            {
-
-              
-                SendKeys.Send("@");
-
-            }
-            else
-            {
-
-                  SendKeys.Send("2");
-
-            }
-
-        }
-
-        private void _hash__Click(object sender, EventArgs e)
-        {
-            if (sh == 1)
-            {
-
-               
-                SendKeys.Send("#");
-
-            }
-            else
-            {
-
-                SendKeys.Send("3");
-
-            }
-        }
-
-        private void gunaElipsePanel10_Click(object sender, EventArgs e)
-        {
-            if (sh == 1)
-            {
-
+                s1_.name_btn_color = Color.Silver;
+                s2_.name_btn_color = Color.Silver;
+                s3_.name_btn_color = Color.Silver;
+                s4_.name_btn_color = Color.Silver;
+                s5_.name_btn_color = Color.Silver;
+                s6_.name_btn_color = Color.Silver;
+                s7_.name_btn_color = Color.Silver;
+                s8_.name_btn_color = Color.Silver;
+                s9_.name_btn_color = Color.Silver;
+                s10_.name_btn_color = Color.Silver;
+                s11_.name_btn_color = Color.Silver;
+                s12_.name_btn_color = Color.Silver;
+                s13_.name_btn_color = Color.Silver;
+                s14_.name_btn_color = Color.Silver;
+                s15_.name_btn_color = Color.Silver;
+                s16_.name_btn_color = Color.Silver;
+                s17_.name_btn_color = Color.Silver;
+                s18_.name_btn_color = Color.Silver;
+                s19_.name_btn_color = Color.Silver;
+                s20_.name_btn_color = Color.Silver;
+                s21_.name_btn_color = Color.Silver;
                 
-                SendKeys.Send("$");
+                keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYDOWN, 0);
 
             }
-            else
+            else if (sh == 2)
             {
+                keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
 
-               SendKeys.Send("4"); 
+                s1_.name2_btn_color = Color.Silver;
+                s2_.name2_btn_color = Color.Silver;
+                s3_.name2_btn_color = Color.Silver;
+                s4_.name2_btn_color = Color.Silver;
+                s5_.name2_btn_color = Color.Silver;
+                s6_.name2_btn_color = Color.Silver;
+                s7_.name2_btn_color = Color.Silver;
+                s8_.name2_btn_color = Color.Silver;
+                s9_.name2_btn_color = Color.Silver;
+                s10_.name2_btn_color = Color.Silver;
+                s11_.name2_btn_color = Color.Silver;
+                s12_.name2_btn_color = Color.Silver;
+                s13_.name2_btn_color = Color.Silver;
+                s14_.name2_btn_color = Color.Silver;
+                s15_.name2_btn_color = Color.Silver;
+                s16_.name2_btn_color = Color.Silver;
+                s17_.name2_btn_color = Color.Silver;
+                s18_.name2_btn_color = Color.Silver;
+                s19_.name2_btn_color = Color.Silver;
+                s20_.name2_btn_color = Color.Silver;
+                s21_.name2_btn_color = Color.Silver;
+
+                s1_.name_btn_color = Color.White;
+                s2_.name_btn_color = Color.White;
+                s3_.name_btn_color = Color.White;
+                s4_.name_btn_color = Color.White;
+                s5_.name_btn_color = Color.White;
+                s6_.name_btn_color = Color.White;
+                s7_.name_btn_color = Color.White;
+                s8_.name_btn_color = Color.White;
+                s9_.name_btn_color = Color.White;
+                s10_.name_btn_color = Color.White;
+                s11_.name_btn_color = Color.White;
+                s12_.name_btn_color = Color.White;
+                s13_.name_btn_color = Color.White;
+                s14_.name_btn_color = Color.White;
+                s15_.name_btn_color = Color.White;
+                s16_.name_btn_color = Color.White;
+                s17_.name_btn_color = Color.White;
+                s18_.name_btn_color = Color.White;
+                s19_.name_btn_color = Color.White;
+                s20_.name_btn_color = Color.White;
+                s21_.name_btn_color = Color.White;
+
+                sh = 0;
 
             }
+
+
+        }
+        private void s2_Click(object sender, EventArgs e)
+        {
+
+            KeyDown_(Keys.D1);
+            KeyUp_(Keys.D1);
+
         }
 
-        private void _mo__Click(object sender, EventArgs e)
+        private void s3_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
+            KeyDown_(Keys.D2);
+            KeyUp_(Keys.D2);
 
-             
-                SendKeys.Send("{%}");
-
-            }
-            else
-            {
-                
-                   SendKeys.Send("5");
-
-            }
         }
 
-        private void gunaElipsePanel7_Click(object sender, EventArgs e)
+        private void s4_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-               
-                SendKeys.Send("{^}");
-
-            }
-            else
-            {
-
-                 SendKeys.Send("6");
-
-            }
+            KeyDown_(Keys.D3);
+            KeyUp_(Keys.D3);
         }
 
-        private void gunaElipsePanel6_Click(object sender, EventArgs e)
+        private void s5_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                
-                SendKeys.Send("&");
-
-            }
-            else
-            {
-
-               SendKeys.Send("7");
-
-            }
+            KeyDown_(Keys.D4);
+            KeyUp_(Keys.D4);
         }
 
-        private void gunaElipsePanel5_Click(object sender, EventArgs e)
+        private void s6_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                
-                SendKeys.Send("*");
-
-            }
-            else
-            {
-
-               SendKeys.Send("8");
-
-            }
+            KeyDown_(Keys.D5);
+            KeyUp_(Keys.D5);
         }
 
-        private void gunaElipsePanel4_Click(object sender, EventArgs e)
+        private void s7_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-               
-                SendKeys.Send("{(}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("9");
-
-            }
+            KeyDown_(Keys.D6);
+            KeyUp_(Keys.D6);
         }
 
-        private void gunaElipsePanel3_Click(object sender, EventArgs e)
+        private void s8_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-            
-                SendKeys.Send("{)}");
-
-            }
-            else
-            {
-           
-                   SendKeys.Send("0");
-
-            }
+            KeyDown_(Keys.D7);
+            KeyUp_(Keys.D7);
         }
 
-        private void gunaElipsePanel2_Click(object sender, EventArgs e)
+        private void s9_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{_}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{-}");
-
-            }
+            KeyDown_(Keys.D8);
+            KeyUp_(Keys.D8);
         }
 
-        private void gunaElipsePanel1_Click(object sender, EventArgs e)
+        private void s10_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{+}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{=}");
-
-            }
+            KeyDown_(Keys.D9);
+            KeyUp_(Keys.D9);
+        }
+        
+        private void s11_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.D0);
+            KeyUp_(Keys.D0);
         }
 
-        private void _co__Click(object sender, EventArgs e)
+        private void s12_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{~}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{`}");
-
-            }
+            KeyDown_(Keys.OemMinus);
+            KeyUp_(Keys.OemMinus);
         }
 
-        private void gunaElipsePanel39_Click(object sender, EventArgs e)
+        private void s13_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{{}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{[}");
-
-            }
+            KeyDown_(Keys.Oemplus);
+            KeyUp_(Keys.Oemplus);
         }
 
-        private void gunaElipsePanel40_Click(object sender, EventArgs e)
+        private void s1_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{}}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{]}");
-
-            }
+            KeyDown_(Keys.Oemtilde);
+            KeyUp_(Keys.Oemtilde);
         }
 
-        private void gunaElipsePanel41_Click(object sender, EventArgs e)
+        private void s14_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{|}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{\\}");
-
-            }
+            KeyDown_(Keys.OemOpenBrackets);
+            KeyUp_(Keys.OemOpenBrackets);
         }
 
-        private void gunaElipsePanel52_Click(object sender, EventArgs e)
+        private void s15_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{:}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{;}");
-
-            }
+            KeyDown_(Keys.OemCloseBrackets);
+            KeyUp_(Keys.OemCloseBrackets);
         }
 
-        private void gunaElipsePanel53_Click(object sender, EventArgs e)
+        private void s16_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{\"}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{'}");
-
-            }
+            KeyDown_(Keys.OemPipe);
+            KeyUp_(Keys.OemPipe);
         }
 
-        private void _smal__Click(object sender, EventArgs e)
+        private void s17_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{<}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{,}");
-
-            }
+            KeyDown_(Keys.OemSemicolon);
+            KeyUp_(Keys.OemSemicolon);
         }
 
-        private void gunaElipsePanel64_Click(object sender, EventArgs e)
+        private void s18_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
-
-                SendKeys.Send("{>}");
-
-            }
-            else
-            {
-
-                SendKeys.Send("{.}");
-
-            }
+            KeyDown_(Keys.OemQuotes);
+            KeyUp_(Keys.OemQuotes);
         }
 
-        private void gunaElipsePanel65_Click(object sender, EventArgs e)
+        private void s19_Click(object sender, EventArgs e)
         {
-            if (sh == 1)
-            {
+            KeyDown_(Keys.Oemcomma);
+            KeyUp_(Keys.Oemcomma);
+        }
 
-                SendKeys.Send("{?}");
+        private void s20_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.OemPeriod);
+            KeyUp_(Keys.OemPeriod);
+        }
 
-            }
-            else
-            {
-
-                SendKeys.Send("{/}");
-
-            }
+        private void s21_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.OemQuestion);
+            KeyUp_(Keys.OemQuestion);
         }
 
         #endregion
 
         #region key_v
 
-       
-        private void gunaElipsePanel28_Click(object sender, EventArgs e)
+
+        private void tab_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{TAB}");
+            KeyDown_(Keys.Tab);
+            KeyUp_(Keys.Tab);
         }
 
-        private void gunaElipsePanel54_Click(object sender, EventArgs e)
+        private void enter_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{ENTER}");
+            KeyDown_(Keys.Enter);
+            KeyUp_(Keys.Enter);
         }
 
-        private void gunaElipsePanel67_Click(object sender, EventArgs e)
+        private void ctrl_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("^");
+            KeyDown_(Keys.Control);
+            KeyUp_(Keys.Control);
         }
 
-        private void gunaElipsePanel70_Click(object sender, EventArgs e)
+        private void alt_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("%");
+            KeyDown_(Keys.Alt);
+            KeyUp_(Keys.Alt);
         }
 
-        private void label95_Click(object sender, EventArgs e)
-        {      
-            SendKeys.Send("{LEFT}");
+        private void arrow_l_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.Left);
+            KeyUp_(Keys.Left);
         }
 
-        private void label96_Click(object sender, EventArgs e)
+        private void arrow_r_Click(object sender, EventArgs e)
         {
-          SendKeys.Send("{RIGHT}");
+            KeyDown_(Keys.Right);
+            KeyUp_(Keys.Right);
         }
 
-        private void label97_Click(object sender, EventArgs e)
+        private void arrow_up_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{UP}");
+            KeyDown_(Keys.Up);
+            KeyUp_(Keys.Up);
         }
 
-        private void label98_Click(object sender, EventArgs e)
+        private void arrow_dwon_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{DOWN}");
+            KeyDown_(Keys.Down);
+            KeyUp_(Keys.Down);
         }
-        private void gunaElipsePanel15_Click(object sender, EventArgs e)
+        private void esc_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{END}");
+            KeyDown_(Keys.Escape);
+            KeyUp_(Keys.Escape);
         }
 
         #endregion
 
         #region fn
-
         int fn__ = 0;
-        private void gunaElipsePanel68_Click(object sender, EventArgs e)
+        private void fn_Click(object sender, EventArgs e)
         {
-
-            fn__Tick_task();
             fn__ += 1;
-
+            fn__Tick_task();
         }
 
         private void fn__Tick_task()
         {
-            Task.Factory.StartNew(() =>
-            {
-
-                while (true)
-                {
-                    Thread.Sleep(100);
-
-                    if (fn__ == 1)
-                    {
-
-                        _f1_.ForeColor = Color.White;
-                        _f2_.ForeColor = Color.White;
-                        _f3_.ForeColor = Color.White;
-                        _f4_.ForeColor = Color.White;
-                        _f5_.ForeColor = Color.White;
-                        _f6_.ForeColor = Color.White;
-                        _f7_.ForeColor = Color.White;
-                        _f8_.ForeColor = Color.White;
-                        _f9_.ForeColor = Color.White;
-                        _f10_.ForeColor = Color.White;
-                        _f11_.ForeColor = Color.White;
-                        _f12_.ForeColor = Color.White;
-
-                    }
-                    else if (fn__ == 2)
-                    {
-
-                        _f1_.ForeColor = Color.Silver;
-                        _f2_.ForeColor = Color.Silver;
-                        _f3_.ForeColor = Color.Silver;
-                        _f4_.ForeColor = Color.Silver;
-                        _f5_.ForeColor = Color.Silver;
-                        _f6_.ForeColor = Color.Silver;
-                        _f7_.ForeColor = Color.Silver;
-                        _f8_.ForeColor = Color.Silver;
-                        _f9_.ForeColor = Color.Silver;
-                        _f10_.ForeColor = Color.Silver;
-                        _f11_.ForeColor = Color.Silver;
-                        _f12_.ForeColor = Color.Silver;
-
-                        fn__ = 0;
-                    }
-
-                }
-
-            });
-
-        }
-
-        private void _f1_p_Click(object sender, EventArgs e)
-        {
-            if (fn__ == 1)
-            {
-            
-                SendKeys.Send("{F1}");
-
-            }
-
-        }
-
-        private void _f2__Click(object sender, EventArgs e)
-        {
             if (fn__ == 1)
             {
 
-                SendKeys.Send("{F2}");
+                _f1_.name_btn_color = Color.White;
+                _f2_.name_btn_color = Color.White;
+                _f3_.name_btn_color = Color.White;
+                _f4_.name_btn_color = Color.White;
+                _f5_.name_btn_color = Color.White;
+                _f6_.name_btn_color = Color.White;
+                _f7_.name_btn_color = Color.White;
+                _f8_.name_btn_color = Color.White;
+                _f9_.name_btn_color = Color.White;
+                _f10_.name_btn_color = Color.White;
+                _f11_.name_btn_color = Color.White;
+                _f12_.name_btn_color = Color.White;
 
             }
-        }
-
-        private void _f3_p_Click(object sender, EventArgs e)
-        {
-            if (fn__ == 1)
+            else if (fn__ == 2)
             {
 
-                SendKeys.Send("{F3}");
+                _f1_.name_btn_color = Color.Silver;
+                _f2_.name_btn_color = Color.Silver;
+                _f3_.name_btn_color = Color.Silver;
+                _f4_.name_btn_color = Color.Silver;
+                _f5_.name_btn_color = Color.Silver;
+                _f6_.name_btn_color = Color.Silver;
+                _f7_.name_btn_color = Color.Silver;
+                _f8_.name_btn_color = Color.Silver;
+                _f9_.name_btn_color = Color.Silver;
+                _f10_.name_btn_color = Color.Silver;
+                _f11_.name_btn_color = Color.Silver;
+                _f12_.name_btn_color = Color.Silver;
 
+                fn__ = 0;
             }
+
+            PressKey(0x3F);
         }
 
-        private void _f4_p_Click(object sender, EventArgs e)
+        private void _f1_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
+            KeyDown_(Keys.F1);
+            KeyUp_(Keys.F1);
 
-                SendKeys.Send("{F4}");
-
-            }
         }
 
-        private void _f5_p_Click(object sender, EventArgs e)
+        private void _f2_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F5}");
-
-            }
+            KeyDown_(Keys.F2);
+            KeyUp_(Keys.F2);
         }
 
-        private void _f6_p_Click(object sender, EventArgs e)
+        private void _f3_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F6}");
-
-            }
+            KeyDown_(Keys.F3);
+            KeyUp_(Keys.F3);
         }
 
-        private void _f7_p_Click(object sender, EventArgs e)
+        private void _f4_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F7}");
-
-            }
+            KeyDown_(Keys.F4);
+            KeyUp_(Keys.F4);
         }
 
-        private void _f8_p_Click(object sender, EventArgs e)
+        private void _f5_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F8}");
-
-            }
+            KeyDown_(Keys.F5);
+            KeyUp_(Keys.F5);
         }
 
-        private void _f9_p_Click(object sender, EventArgs e)
+        private void _f6_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F9}");
-
-            }
+            KeyDown_(Keys.F6);
+            KeyUp_(Keys.F6);
         }
 
-        private void _f10__Click(object sender, EventArgs e)
+        private void _f7_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F10}");
-
-            }
+            KeyDown_(Keys.F7);
+            KeyUp_(Keys.F7);
         }
 
-        private void _f11_p_Click(object sender, EventArgs e)
+        private void _f8_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
-
-                SendKeys.Send("{F11}");
-
-            }
+            KeyDown_(Keys.F8);
+            KeyUp_(Keys.F8);
         }
 
-        private void _f12_p_Click(object sender, EventArgs e)
+        private void _f9_Click(object sender, EventArgs e)
         {
-            if (fn__ == 1)
-            {
+            KeyDown_(Keys.F9);
+            KeyUp_(Keys.F9);
+        }
 
-                SendKeys.Send("{F2}");
+        private void _f10_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.F10);
+            KeyUp_(Keys.F10);
+        }
 
-            }
+        private void _f11_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.F11);
+            KeyUp_(Keys.F11);
+        }
+
+        private void _f12_Click(object sender, EventArgs e)
+        {
+            KeyDown_(Keys.F12);
+            KeyUp_(Keys.F12);
         }
 
 
@@ -2057,33 +817,29 @@ namespace keyboard_
 
         #region del
 
-        private void gunaElipsePanel78_Click(object sender, EventArgs e)
+        private void del2_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{DELETE}");
+            KeyDown_(Keys.Delete);
+            KeyUp_(Keys.Delete);
         }
-        private void gunaElipsePanel9_Click(object sender, EventArgs e)
+        private void backspace_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{BACKSPACE}");
+            KeyDown_(Keys.Back);
+            KeyUp_(Keys.Back);
         }
 
         #endregion
 
+        #region win btn
+
         private void start_Click(object sender, EventArgs e)
         {
-
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "cmd.exe";
-            p.StartInfo.RedirectStandardInput = true;
-            p.StartInfo.RedirectStandardOutput = true;
-            p.StartInfo.CreateNoWindow = true;
-            p.StartInfo.UseShellExecute = false;
-            p.Start();
-
-            p.StandardInput.WriteLine("cd/ & cd windows & cd NEAR_OS & echo 1 > start_m_.txt");
-            p.StandardInput.Flush();
-            p.StandardInput.Close();
+            KeyDown_(Keys.LWin);
+            KeyUp_(Keys.LWin);
 
         }
+
+        #endregion
 
         private void space_Click(object sender, EventArgs e)
         {
